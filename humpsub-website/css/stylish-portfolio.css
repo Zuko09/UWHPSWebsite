@@ -1,8 +1,8 @@
 /*!
- * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
+* Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
+* Copyright 2013-2016 Start Bootstrap
+* Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+*/
 
 /* Custom Styles */
 
@@ -23,26 +23,26 @@
 }
 
 .line {
-  color: white;
-  border-color: white;
-  border-top: 1px solid;
-  display: block;
-  margin-left: 25%;
-  width: 50%;
-  margin-top: 25px;
-  padding-top: 50px;
-  position: relative;
+    color: white;
+    border-color: white;
+    border-top: 1px solid;
+    display: block;
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 25px;
+    padding-top: 50px;
+    position: relative;
 }
 
 #roster-title {
-   color: #111;
-   font-family: 'Open Sans Condensed', sans-serif;
-   font-size: 64px; font-weight: 700;
-   line-height: 64px;
-   margin: 0 0 0;
-   padding: 20px 30px;
-   text-align: center;
-   text-transform: uppercase;
+    color: #111;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 64px; font-weight: 700;
+    line-height: 64px;
+    margin: 0 0 0;
+    padding: 20px 30px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #roster {
@@ -57,8 +57,23 @@
 }
 
 .roster-subsection:hover {
-  color: #e5c100
+    color: #e5c100
 }
+
+.text-vertical-top {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+    left: 0;
+}
+
+.text-vertical-top h1 {
+    margin-top: 20px;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
 
 /* Global Styles */
 html,
@@ -300,8 +315,8 @@ footer {
 }
 
 #to-top {
-  display: none;
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
 }
