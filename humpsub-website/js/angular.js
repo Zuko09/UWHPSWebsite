@@ -1,7 +1,9 @@
 var app1 = angular.module('app1', []);
 
 app1.controller('ctrl1', function($scope, $window) {
-
+    // MISC DATA
+    $scope.date = "November"
+    // ROSTER STUFF
     $scope.roster = [
         subteam1 = {
             name : 'Hull Team',

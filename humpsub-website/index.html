@@ -72,7 +72,10 @@
             <h3 class="standout-text-dark">University of Washington</h3>
             <h1 class="standout-text-dark">Human Powered Submarine Team</h1>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+            <ul>
+                <a href="#sponsor" class="btn btn-dark btn-lg"> Be A Sponsor</a>
+                <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+            </ul>
         </div>
     </header>
 
@@ -166,7 +169,7 @@
         <div id="team-roster" class="callout" >
             <p class="btn btn-dark btn-lg" style="margin-left:20px; margin-top: 20px"
             ng-show="is_showing_members" ng-click="reset()">Back</p>
-            <div class="text-vertical-top" style="text-align: center;">
+            <div class="text-vertical-center" style="text-align: center;">
                 <h1>{{title}}</h1>
                 <svg height="10" width="100%">
                     <line x1="25%" y1="5" x2="75%" y2="5" class="svg-line"/>
@@ -188,37 +191,26 @@
                         <h2>Our Work</h2>
                         <hr class="small">
                         <div class="row">
+                            <!--Wait for our USEED event -->
                             <div class="col-md-6">
                                 <div class="portfolio-item">
-                                    <a href="#">
-                                        <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                    </a>
+
+                                    <p>Over the past few years, the team has nearly doubled in size and its competitive performance has increased dramatically. At the 2015 International Submarine Races (ISR), we set a new UW record at 6.01 knots (placing 2nd in the male-piloted category) and our female pilot set a school record of 5.44 knots (placing 1st for women; a mere 0.06 knots from the ISR World Record). </p>
+                                    <p>Despite limited resources and workspace, our team of dedicated engineering students accomplished UW's best performance ever in competition. This year, the team is expanding, working in a new space provided by the UW Applied Physics Lab, and setting its sights on the world speed records.</p>
+                                    <h3>Help us During our<a href="https://uw.useed.net/projects/389/home"><strong> USEED Event </strong></a> in {{date}} </h3>
+
                                 </div>
                             </div>
+                            <!-- Contact US Now! -->
                             <div class="col-md-6">
                                 <div class="portfolio-item">
                                     <a href="#">
-                                        <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="portfolio-item">
-                                    <a href="#">
-                                        <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="portfolio-item">
-                                    <a href="#">
-                                        <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                        <img class="img-portfolio img-responsive" src="img/HPS-sub.jpg" style="height: 250px;">
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <!-- /.row (nested) -->
-                        <a href="#" class="btn btn-dark">View More Items</a>
                     </div>
                     <!-- /.col-lg-10 -->
                 </div>
@@ -228,17 +220,17 @@
         </section>
 
         <!-- Call to Action -->
-        <aside class="call-to-action bg-primary">
+        <div id="sponsor" class="call-to-action bg-primary">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h3>The buttons below are impossible to resist.</h3>
-                        <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                        <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                        <h3>Help our Team Achieve New Heights!</h3>
+                        <a href="mailto:hps@uw.edu" class="btn btn-lg btn-light">Sponsor Us!</a>
+                        <a href="https://uw.useed.net/projects/389/home" class="btn btn-lg btn-dark">Learn More!</a>
                     </div>
                 </div>
             </div>
-        </aside>
+        </div>
 
         <!-- Map -->
         <section id="contact" class="map">
@@ -249,6 +241,22 @@
             </small>
         </iframe>
     </section>
+
+    <div class="container" style="background: #337ab7; margin: 0px; width: 100vw; color: white;">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="row" style="text-align:center;">
+                <div class="col-md-3 col-sm-6">
+                    <h2>Sponsor 1</h2>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h2>Sponsor 2</h2>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h2>Sponsor 3</h2>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -267,10 +275,10 @@
                         <br>
                         <ul class="list-inline">
                             <li>
-                                <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                                <a href="https://www.facebook.com/uwhps/"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                                <a href="https://www.instagram.com/uwhps/"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
@@ -282,6 +290,7 @@
                 </div>
             </div>
             <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+
         </footer>
 
         <!-- jQuery -->
