@@ -1,8 +1,10 @@
 var app1 = angular.module('app1', []);
 
 app1.controller('ctrl1', function($scope, $window) {
+
     // MISC DATA
     $scope.date = "November"
+
     // ROSTER STUFF
     $scope.roster = [
         subteam1 = {
@@ -85,4 +87,15 @@ app1.controller('ctrl1', function($scope, $window) {
         }
     };
 
+    // SUBTEAM INFOGRAPHIC STUFF
+
+    $scope.details = "details";
+
+    $scope.showTheseDetails = function() {
+        $scope.showDetails = ! $scope.showDetails
+
+    }
+
+    // SPONSOR INFORMATION
+    
 });
