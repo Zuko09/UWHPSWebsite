@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app1" ng-controller="ctrl1">
+<html lang="en" ng-app="app1" ng-controller="appController">
 
 <head>
 
@@ -20,6 +20,7 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900' rel='stylesheet' type='text/css'>
 
     <!-- AngularJS -->
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
@@ -87,10 +88,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1>Who are we?</h2>
-                        <p class="lead">We are UW's One and Only Human Powered Submarine Team!</p>
-                        <p class="lead">Every year, our team of mechanical, electrical, and computer engineers come together to build the new fastest Human Powered Submarine IN THE WORLD</p>
+                    <h1 style="font-family:Raleway;">Who are we?</h2>
+                        <p class="lead">We are engineers. We are designers. <br> We are machinists, coders, athletes, and divers.<br> </p>
+
+                        <p class="lead">We are a community of driven students from across the University of Washington <br> who believe that everyone is capable of impactful and original work.<br> </p>
+
+                        <p class="lead">Every year, we come together to share our passion with others,<br>and build the fastest human powered submarine in the world.<br> </p>
+
+                        <p class="lead">Welcome, to UW Human Powered Sub.<br> </p>
+
+                        <div id="spacer" style="height: 25px;"></div>
+
+                        <a href="#services" id="about-next-button"><i class="fa fa-angle-down fa-5x" style="color:#333;"></i></a>
+                        <div id="spacer" style="height: 25px;"></div>
+
                     </div>
+
                 </div>
                 <!-- /.row -->
             </div>
@@ -99,91 +112,28 @@
 
         <!-- Services -->
         <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-        <section id="services" class="services bg-primary">
+        <section id="services" class="services bg-primary" style="font-family:Raleway; padding-top:30px;">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-lg-10 col-lg-offset-1">
                         <h2>How It All Comes Together</h2>
                         <hr class="small">
                         <div class="row">
-                            <div class="col-md-3 col-sm-6">
-                                <div class="service-item">
+
+                            <div class="col-xs-6 col-sm-6 col-md-4" ng-repeat="subteam in teamInfo track by $index">
+                                <div class="service-item" style="margin-bottom:15px;">
                                     <span class="fa-stack fa-4x">
                                         <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                        <i class="{{subteam.glyph}}"></i>
                                     </span>
-                                    <h4>
-                                        <strong>The Hull</strong>
+                                    <h4 style="margin-top:0px;">
+                                        <strong>{{subteam.name}}</strong>
                                     </h4>
-                                    <p>A jaw-dropping team of sculptors erect the aerodynamic hull.</p>
-                                    <a href="#panel" class="btn btn-light" ng-click="showTheseDetails()">Learn More</a>
+                                    <p>{{subteam.description}}</p>
+                                    <a href="#panel" class="btn btn-light" ng-click="showTheseDetails($index)">Learn More</a>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="service-item">
-                                    <span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                                    </span>
-                                    <h4>
-                                        <strong>The Fins</strong>
-                                    </h4>
-                                    <p>An incredible team of workshopmen carefully craft the sexy-looking fins.</p>
-                                    <a href="#panel" class="btn btn-light" ng-click="showDetails = ! showDetails">Learn More</a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="service-item">
-                                    <span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                                    </span>
-                                    <h4>
-                                        <strong>The Tech</strong>
-                                    </h4>
-                                    <p>A godlike team of CS and EE dudes code the gnarly Rasberry Pi Tech.</p>
-                                    <a href="#panel" class="btn btn-light" ng-click="showDetails = ! showDetails">Learn More</a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="service-item">
-                                    <span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                                    </span>
-                                    <h4>
-                                        <strong>The Human</strong>
-                                    </h4>
-                                    <p>One human, trains INSANELY hard, all year, as their vessel is prepared.</p>
-                                    <a href="#panel" class="btn btn-light" ng-click="showDetails = ! showDetails">Learn More</a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6" style="margin-left: 20vw;">
-                                <div class="service-item">
-                                    <span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                                    </span>
-                                    <h4>
-                                        <strong>The Human</strong>
-                                    </h4>
-                                    <p>One human, trains INSANELY hard, all year, as their vessel is prepared.</p>
-                                    <a href="#panel" class="btn btn-light" ng-click="showDetails = ! showDetails">Learn More</a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="service-item">
-                                    <span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                                    </span>
-                                    <h4>
-                                        <strong>The Human</strong>
-                                    </h4>
-                                    <p>One human, trains INSANELY hard, all year, as their vessel is prepared.</p>
-                                    <a href="#panel" class="btn btn-light" ng-click="showDetails = ! showDetails">Learn More</a>
-                                </div>
-                            </div>
+
                         </div>
                         <!-- /.row (nested) -->
                     </div>
@@ -193,7 +143,8 @@
             </div>
             <!-- /.container -->
             <div id="panel" class="infopanel" ng-show="showDetails">
-                <p>Over the past few years, the team has nearly doubled in size and its competitive performance has increased dramatically. At the 2015 International Submarine Races (ISR), we set a new UW record at 6.01 knots (placing 2nd in the male-piloted category) and our female pilot set a school record of 5.44 knots (placing 1st for women; a mere 0.06 knots from the ISR World Record). </p>
+                <h1>{{infopanelTitle}}</p>
+                <p>{{infopanelDetails}}</p>
                 <img src="img/humpsub.jpg" style="height: 128px; width: 128px;">
             </div>
 
@@ -260,14 +211,14 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h3>Help our Team Achieve New Heights!</h3>
-                        <a href="" class="btn btn-lg btn-light" ng-click="showSponsorPitch = ! showSponsorPitch">Sponsor Us!</a>
+                        <a href="" class="btn btn-lg btn-light" ng-click="showSponsorPitch()">Sponsor Us!</a>
                         <a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=2&source=EDZ" class="btn btn-lg btn-dark">Donate!</a>
-                        <a href="#panel" class="btn btn-lg btn-light" ng-click="showMailingList = ! showMailingList">Follow Us!</a>
+                        <a href="" class="btn btn-lg btn-light" ng-click="showMailingList()">Follow Us!</a>
                     </div>
                 </div>
             </div>
-            <div id="spacer" style="height: 50px;"></div>
-            <div ng-show="showMailingList">
+            <div id="spacer" style="height: 0px;"></div>
+            <div id="mailing-list" ng-show="isShowingMailingList">
                 Join our Mailing List!
                 <form style="color:black;">
                     Name:<br>
@@ -277,14 +228,17 @@
                 </form>
                 <button type="submit" style="color: black;" onclick="writeNewEmail()"> Submit </buton>
             </div>
-            <div ng-show="showSponsorPitch">
-                Here are some reasons you should sponsor us
-                <ul>
-                    <li> We are awesome</li>
-                    <li> We have a dope ass Website</li>
-                    <li> What Sub Dawg. We rest our case</li>
-                </ul>
-                <a href="mailto:hps@uw.edu" class="btn btn-lg btn-light">Sponsor Us!</a>
+            <div ng-show="isShowingSponsorPitch">
+                <div class="container">
+                    <div class="row">
+                        <div class="text-center">
+                            <h1 style="font-family:Raleway;">Benefits Of Being A Sponsor</h1>
+                            <p class="lead">We are awesome</p>
+                            <a href="mailto:hps@uw.edu" class="btn btn-lg btn-light">Sponsor Us!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Map -->
@@ -297,27 +251,26 @@
         </iframe>
     </section>
 
-    <div class="container" style="background: white; margin: 0px; width: 100vw; color: #337ab7;">
-        <div class="col-lg-10 col-lg-offset-1">
-            <div class="row" style="text-align:center;">
-                <div class="col-md-3 col-sm-6">
-                    <h2>Sponsor 1</h2>
+    <div class="container" style="margin: 0px; width: 100vw; color: #337ab7; background:white;">
+        <div>
+            <div class="row" style="text-align:center; margin-top: 20px;">
+                <div ng-repeat="i in sponsor_array_1 track by $index" style="display:inline-block;">
+                    <img src="{{i}}" height="150px" width="200px;" style="margin: 10px;">
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <h2>Sponsor 2</h2>
+                <div ng-repeat="i2 in sponsor_array_2 track by $index" style="display:inline-block;">
+                    <img src="{{i2}}" height="150px" width="350px;" style="margin: 10px;">
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <h2>Sponsor 3</h2>
+
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer>
+    <footer style="color: white; background:#337ab7">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center" style="color: white;">
+                <div class="col-lg-10 col-lg-offset-1 text-center" >
                     <h4><strong>Contact Us</strong>
                     </h4>
                     <p>Mechanical Engineering Department,

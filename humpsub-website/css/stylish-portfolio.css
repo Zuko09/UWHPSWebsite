@@ -1,18 +1,27 @@
 /*!
 * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
 * Copyright 2013-2016 Start Bootstrap
-* Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+* Licensed under MIT (https://github.com/BlackrockDigital/sta2rtbootstrap/blob/gh-pages/LICENSE)
 */
 
 /* Custom Styles */
 
 /* Style the buttons that are used to open and close the accordion panel */
 
+#about-next-button:hover {
+    opacity: 0.5;
+}
+
+.infopanel {
+    text-align: center;
+}
+
 .standout-text-dark {
     color: white;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     margin-top: 5px;
     margin-bottom: 5px;
+    font-family: Raleway;
 }
 
 .colored-text {
@@ -76,6 +85,11 @@
     font-weight: 700;
 }
 
+.lead {
+    font-family: Raleway;
+    font-size: 22px;
+    line-height: 45px;
+}
 
 /* Global Styles */
 html,
