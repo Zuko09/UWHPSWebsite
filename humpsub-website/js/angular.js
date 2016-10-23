@@ -159,7 +159,12 @@
 
         // SPONSOR INFORMATION
 
+
+
         $scope.sponsor_count = 16;
+
+        $scope.search_sponsors = "";
+
         $scope.sponsor_array_1 = ["img/hps-sponsors/sponsor1.png",
                                 "img/hps-sponsors/sponsor2.png",
                                 "img/hps-sponsors/sponsor3.png",
