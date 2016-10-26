@@ -241,24 +241,13 @@
     </div>
 
     <!-- Sponsors -->
-<<<<<<< HEAD
     <div class="container" style="margin: 0px; width: 100vw; color: #337ab7; background:white;">
         <div class="row" style="text-align:center; margin-top: 20px;">
             <div ng-repeat="s in sponsor_array track by $index" style="display:inline-block;">
-                <img src="{{s.imgSrc}}" alt="{{s.name}}">
-=======
-    <div class="container full" style="margin: 0px; width: 100vw; color: #337ab7; background:white;">
-        <div>
-            <input type="text" name="sponsorName" ng-model="sponsorName"><br>
-
-            <div class="row" style="text-align:center; margin-top: 20px;">
-                <div ng-repeat="i in sponsor_array_1 track by $index" style="display:inline-block;" class="sponsor-logo col-sm-4">
-                    <img src="{{i}}" height="150px" width="200px;">
-                </div>
-                <div ng-repeat="i2 in sponsor_array_2 track by $index" style="display:inline-block;" class="sponsor-logo">
-                    <img src="{{i2}}" height="150px" width="350px;" style="margin: 10px;">
-                </div>
->>>>>>> master
+                <a href="{{s.link}}">
+                    <img src="{{sponsor_logos_dir}}{{s.imgSrc}}" alt="{{s.name}}">
+                    <div class="">{{s.name}}</div>
+                </a>
             </div>
         </div>
     </div>

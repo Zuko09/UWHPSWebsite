@@ -198,15 +198,8 @@
         }
         // SPONSOR INFORMATION
 
-<<<<<<< HEAD
-=======
-
         $scope.sponsorName = "";
 
-
-        $scope.sponsor_count = 16;
-
->>>>>>> master
         $scope.search_sponsors = "";
 
         $scope.sponsor_logos_dir = "img/hps-sponsors/blue-white-transparent/";
