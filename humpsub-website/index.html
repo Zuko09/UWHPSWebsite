@@ -73,7 +73,7 @@
     </nav>
 
     <!-- Header -->
-    <header id="top" class="header">
+    <header id="top" class="header full">
         <div class="text-vertical-center">
             <h2 class="standout-text-dark" style="font-weight:500">Mechanical Engineering</h2>
             <h3 class="standout-text-dark" style="font-weight:500">University of Washington</h3>
@@ -85,20 +85,27 @@
     </header>
 
     <!-- About -->
-    <section id="about" class="about">
+    <section id="about" class="about full">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1 style="font-family:Raleway; font-size:38px;">Who are we?</h2>
+                    <h1 style="font-family:Raleway; font-size:6vh; margin:0px;  ">Who are we?</h1>
                         <!-- <p class="lead">We are engineers. We are designers. <br> We are machinists, coders, athletes, and divers.<br> </p> -->
-                        <p class="lead"><br>We are a community of driven students from across the University of Washington <br> who believe that everyone is capable of impactful and original work.<br> </p>
-                        <p class="lead">Every year, we come together to share our passion with others,<br>and build the fastest human powered submarine in the world.<br> </p>
-                        <p class="lead" style="font-size: 30px;"><br>Welcome, to UW Human Powered Sub.<br> </p>
+                        <div id="spacer" style="height: 5.0vh;"></div>
+                        <p class="lead">We are a community of driven students from across the University of Washington <br> who believe that everyone is capable of impactful and original work.<br> </p>
 
-                        <div id="spacer" style="height: 30px;"></div>
+                        <div id="spacer" style="height: 2.0vh;"></div>
+                        <p class="lead">Every year, we come together to share our passion with others,<br>and build the fastest human powered submarine in the world.</p>
+
+                        <div id="spacer" style="height: 5.0vh;"></div>
+
+                        <p class="lead" style="font-size: 4.8vh;">Welcome, to UW Human Powered Sub.</p>
+                        <div id="spacer" style="height: 3.0vh;"></div>
+
+                        <!-- <div id="spacer" style="height: 30px;"></div> -->
 
                         <a href="#services" id="about-next-button"><i class="fa fa-angle-down fa-5x" style="color:#333;"></i></a>
-                        <div id="spacer" style="height: 30px;"></div>
+                        <!-- <div id="spacer" style="height: 30px;"></div> -->
 
                     </div>
 
@@ -112,24 +119,22 @@
 
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary" style="font-family:Raleway; padding-top:30px;">
+    <section id="services" class="services bg-primary full" style="font-family:Raleway; padding-top:30px; ">
         <div class="container">
-            <div class="row text-center">
+            <div class="row text-center" style:"margin:0px">
                 <div class="col-lg-10 col-lg-offset-1">
                     <h2>How It All Comes Together</h2>
                     <hr class="small">
                     <div class="row">
-
                         <div class="col-xs-6 col-sm-6 col-md-4" ng-repeat="subteam in teamInfo track by $index">
-                            <div class="service-item" style="margin-bottom:15px;">
+                            <div class="service-item" style="margin-bottom:15px; margin-top:3.0vh;">
                                 <span class="fa-stack fa-4x">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="{{subteam.glyph}}"></i>
                                 </span>
-                                <h4 style="margin-top:0px;">
-                                    <strong>{{subteam.name}}</strong>
+                                <h4 style="font-size:26px;">
+                                    {{subteam.name}}
                                 </h4>
-                                <p>{{subteam.description}}</p>
                                 <a href="#panel" class="btn btn-light" ng-click="showTheseDetails($index)">Learn More</a>
                             </div>
                         </div>
@@ -142,20 +147,20 @@
             <!-- /.row -->
         </div>
         <!-- /.container -->
-        <div id="panel" class="infopanel" ng-show="showDetails">
-            <h1>{{infopanelTitle}}</p>
-            <p>{{infopanelDetails}}</p>
-            <img src="img/humpsub.jpg" style="height: 128px; width: 128px;">
-        </div>
-
         </div>
     </section>
 
+    <div id="panel" class="infopanel" ng-show="showDetails" style="height: 45vh;">
+        <h1 style="font-size:4.5em; font-weight:700;">{{infopanelTitle}}</h1>
+        <p>{{infopanelDetails}}</p>
+        <img src="img/humpsub.jpg" style="height: 128px; width: 128px;">
+    </div>
+
     <!-- Callout -->
-    <div id="team-roster" class="callout" >
-        <p class="btn btn-dark btn-lg" style="margin-left:20px; margin-top: 20px"
+    <div id="team-roster" class="callout" style="height: 55vh;">
+        <p class="btn btn-dark btn-lg" style="margin-left:20px; margin-top: 20px; position:absolute;"
         ng-show="is_showing_members" ng-click="reset()">Back</p>
-        <div class="text-vertical-center" style="text-align: center;">
+        <div class="text-vertical-center" style="text-align: center; padding-top:20px;">
             <h1>{{title}}</h1>
             <svg height="10" width="100%">
                 <line x1="25%" y1="5" x2="75%" y2="5" class="svg-line"/>
@@ -163,9 +168,12 @@
             <ul id="roster">
                 <li class="roster-subsection"
                 ng-repeat="object in display track by $index"
-                ng-click="show_next($index, object)">{{object.name}}
-            </li>
+                ng-click="showSubteam($index, object)">{{object.name}}
+                </li>
             </ul>
+            <a href="#portfolio" id="about-next-button">
+                <i class="fa fa-angle-down fa-5x" style="color:#ffffff; opacity:0.9"></i>
+            </a>
         </div>
     </div>
 
@@ -176,27 +184,18 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h2>Our Work</h2>
                     <hr class="small">
-                    <div class="row">
-                        <!--Wait for our USEED event -->
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-
-                                <p>Over the past few years, the team has nearly doubled in size and its competitive performance has increased dramatically. At the 2015 International Submarine Races (ISR), we set a new UW record at 6.01 knots (placing 2nd in the male-piloted category) and our female pilot set a school record of 5.44 knots (placing 1st for women; a mere 0.06 knots from the ISR World Record). </p>
-                                <p>Despite limited resources and workspace, our team of dedicated engineering students accomplished UW's best performance ever in competition. This year, the team is expanding, working in a new space provided by the UW Applied Physics Lab, and setting its sights on the world speed records.</p>
-                                <h3>Help us During our<a href="https://uw.useed.net/projects/389/home"><strong> USEED Event </strong></a> in {{date}} </h3>
-
-                            </div>
-                        </div>
-                        <!-- Contact US Now! -->
-                        <div class="col-md-6">
+                    <div class="row" style="display:block; overflow:auto; background-color:white;">
+                        <div class="col-sm-4" ng-repeat="item in portfolio track by $index">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/HPS-sub.jpg" style="height: 250px;">
+                                    <img class="img-portfolio img-responsive" src="{{item.src}}" style="height: 30vh;">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <!-- /.row (nested) -->
+                    <button class="btn btn-dark" ng-click="showMore()" ng-hide="isShowingMore">View More Items</button>
+                    <button class="btn btn-dark" ng-click="showLess()" ng-hide="!isShowingMore">View Fewer Items</button>
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -241,34 +240,16 @@
         </div>
     </div>
 
-<<<<<<< HEAD
-        <!-- Map -->
-        <!-- <section id="contact" class="map">
-            <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17568.991642314435!2d-122.30761645854315!3d47.6503241912226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549014929d8535eb%3A0x6b742c7901b82ba3!2sUniversity+of+Washington!5e0!3m2!1sen!2sus!4v1472016397453" ></iframe>
-            <br />
-            <small>
-                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17568.991642314435!2d-122.30761645854315!3d47.6503241912226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549014929d8535eb%3A0x6b742c7901b82ba3!2sUniversity+of+Washington!5e0!3m2!1sen!2sus!4v1472016397453"></a>
-            </small>
-=======
-    <!-- Map -->
-    <section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17568.991642314435!2d-122.30761645854315!3d47.6503241912226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549014929d8535eb%3A0x6b742c7901b82ba3!2sUniversity+of+Washington!5e0!3m2!1sen!2sus!4v1472016397453" ></iframe>
-        <br />
-        <small>
-            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17568.991642314435!2d-122.30761645854315!3d47.6503241912226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549014929d8535eb%3A0x6b742c7901b82ba3!2sUniversity+of+Washington!5e0!3m2!1sen!2sus!4v1472016397453"></a>
-        </small>
->>>>>>> ee131d6bd0c9026d2f0e74868c020a84756f3a06
-        </iframe>
-    </section> -->
-
     <!-- Sponsors -->
-    <div class="container" style="margin: 0px; width: 100vw; color: #337ab7; background:white;">
+    <div class="container full" style="margin: 0px; width: 100vw; color: #337ab7; background:white;">
         <div>
+            <input type="text" name="sponsorName" ng-model="sponsorName"><br>
+
             <div class="row" style="text-align:center; margin-top: 20px;">
-                <div ng-repeat="i in sponsor_array_1 track by $index" style="display:inline-block;">
-                    <img src="{{i}}" height="150px" width="200px;" style="margin: 10px;">
+                <div ng-repeat="i in sponsor_array_1 track by $index" style="display:inline-block;" class="sponsor-logo col-sm-4">
+                    <img src="{{i}}" height="150px" width="200px;">
                 </div>
-                <div ng-repeat="i2 in sponsor_array_2 track by $index" style="display:inline-block;">
+                <div ng-repeat="i2 in sponsor_array_2 track by $index" style="display:inline-block;" class="sponsor-logo">
                     <img src="{{i2}}" height="150px" width="350px;" style="margin: 10px;">
                 </div>
             </div>
@@ -283,7 +264,6 @@
                     <h4><strong>Contact Us</strong></h4>
                     <p>Mechanical Engineering Department,
                         <br>Seattle, Washington, 98105</p>
-<<<<<<< HEAD
                         <ul class="list-unstyled">
                             <li><i class="fa fa-envelope-o fa-fw" ></i> <a href="mailto:uwhpsub@gmail.com"style="color: white;">uwhpsub@gmail.com</a>
                             </li>
@@ -303,27 +283,6 @@
                         <hr class="small">
                         <p class="text-muted" style="color: white;">Created By: Varun Viswanath 2016</p>
                     </div>
-=======
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw" ></i> <a href="mailto:contact@uwhps.com"style="color: white;">contact@uwhps.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://www.facebook.com/uwhps/" style="color: white;"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/uwhps/" style="color: white;"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" style="color: white;"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted" style="color: white;">Created By: Varun Viswanath 2016</p>
->>>>>>> ee131d6bd0c9026d2f0e74868c020a84756f3a06
                 </div>
             </div>
         </div>
