@@ -76,21 +76,24 @@
 
         $scope.reset();
 
-        $scope.show_next = function(index, memeber){
+        $scope.showSubteam = function(index, memeber){
             if($scope.is_showing_members == false) {
-                var len = $scope.roster[index].members.length;
-                var temp = [];
-                console.log("roster"+$scope.roster);
-                for(var i=0; i < len; i++) {
-                    temp[i] = $scope.roster[index].members[i];
-                }
-                $scope.title = $scope.roster[index].name;
-                $scope.display = temp;
-                $scope.is_showing_members = true;
+                $scope.showTheseDetails(index);
             } else {
                 $window.location.href = memeber.link;
             }
         };
+        $scope.showThisSubteam = function(index) {
+            var len = $scope.roster[index].members.length;
+            var temp = [];
+            console.log("roster"+$scope.roster);
+            for(var i=0; i < len; i++) {
+                temp[i] = $scope.roster[index].members[i];
+            }
+            $scope.title = $scope.roster[index].name;
+            $scope.display = temp;
+            $scope.is_showing_members = true;
+        }
 
 
 
@@ -138,9 +141,10 @@
         ]
 
         $scope.showTheseDetails = function(i) {
-            $scope.showDetails = ! $scope.showDetails;
+            $scope.showDetails = true;
             $scope.infopanelTitle = $scope.teamInfo[i].name;
             $scope.infopanelDetails = $scope.teamInfo[i].details;
+            $scope.showThisSubteam(i);
         }
 
         $scope.isShowingSponsorPitch = false;
@@ -157,8 +161,52 @@
             $scope.isShowingMailingList = false;
         }
 
+        // Portfolio
+        $scope.fullPortfolio = [
+            {src : "img/portfolio/portfolio-1.jpg"},
+            {src : "img/portfolio/portfolio-2.jpg"},
+            {src : "img/portfolio/portfolio-3.jpg"},
+            {src : "img/portfolio/portfolio-4.jpg"},
+            {src : "img/portfolio/portfolio-5.jpg"},
+            {src : "img/portfolio/portfolio-6.jpg"},
+            {src : "img/portfolio/portfolio-1.jpg"},
+            {src : "img/portfolio/portfolio-2.jpg"},
+            {src : "img/portfolio/portfolio-3.jpg"},
+            {src : "img/portfolio/portfolio-4.jpg"},
+            {src : "img/portfolio/portfolio-5.jpg"},
+            {src : "img/portfolio/portfolio-6.jpg"}
+        ];
+
+        $scope.portfolio = new Array();
+        $scope.initializePortfolio = function() {
+            $scope.portfolio = [];
+            for(var i = 0; i < 6; i++) {
+                $scope.portfolio.push($scope.fullPortfolio[i]);
+            }
+        }
+        $scope.initializePortfolio();
+        $scope.isShowingMore = false;
+        $scope.showMore = function() {
+            $scope.isShowingMore = true;
+            for(var i = 6; i < $scope.fullPortfolio.length; i++) {
+                $scope.portfolio.push($scope.fullPortfolio[i]);
+            }
+        }
+        $scope.showLess = function() {
+            $scope.isShowingMore = false;
+            $scope.initializePortfolio();
+        }
         // SPONSOR INFORMATION
 
+<<<<<<< HEAD
+=======
+
+        $scope.sponsorName = "";
+
+
+        $scope.sponsor_count = 16;
+
+>>>>>>> master
         $scope.search_sponsors = "";
 
         $scope.sponsor_logos_dir = "img/hps-sponsors/blue-white-transparent/";

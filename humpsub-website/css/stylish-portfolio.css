@@ -9,13 +9,26 @@
 /* Style the buttons that are used to open and close the accordion panel */
 
 #about-next-button:hover {
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .infopanel {
     text-align: center;
 }
 
+.full {
+    height: 100vh;
+}
+
+.sponsor-logo {
+    height: 35vh;
+    margin: 10px;
+}
+
+.sponsor-logo > img {
+    height: 35vh;
+    width: 35vh;
+}
 .standout-text-dark {
     color: white;
     text-shadow: 3px 5px 4px rgba(0,0,0,0.6);
@@ -89,7 +102,7 @@
 
 .lead {
     font-family: Raleway;
-    font-size: 22px;
+    font-size: 3.5vh;
     line-height: 45px;
 }
 
