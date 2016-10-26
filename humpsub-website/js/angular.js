@@ -159,31 +159,103 @@
 
         // SPONSOR INFORMATION
 
-
-
-        $scope.sponsor_count = 16;
-
         $scope.search_sponsors = "";
 
-        $scope.sponsor_array_1 = ["img/hps-sponsors/sponsor1.png",
-                                "img/hps-sponsors/sponsor2.png",
-                                "img/hps-sponsors/sponsor3.png",
-                                "img/hps-sponsors/sponsor4.png",
-                                "img/hps-sponsors/sponsor5.png",
-                                "img/hps-sponsors/sponsor6.png",
-                                "img/hps-sponsors/sponsor7.png",
-                                "img/hps-sponsors/sponsor8.png",
-                                "img/hps-sponsors/sponsor9.png",
-                                "img/hps-sponsors/sponsor10.png"
-                            ];
-        $scope.sponsor_array_2 =  ["img/hps-sponsors/sponsor11.png",
-                                  "img/hps-sponsors/sponsor12.png",
-                                  "img/hps-sponsors/sponsor13.png",
-                                  "img/hps-sponsors/sponsor14.png",
-                                  "img/hps-sponsors/sponsor15.png",
-                                  "img/hps-sponsors/sponsor16.png"
-                              ];
+        $scope.sponsor_logos_dir = "img/hps-sponsors/blue-white-transparent/";
 
+        $scope.sponsor_array = [
+            {
+                name : "Umbra Group",
+                imgSrc: "sponsor1.png",
+                link : "https://www.umbragroup.com/en/"
+            },
+            {
+                name : "Glosten, Inc.",
+                imgSrc: "sponsor2.png",
+                link : "http://glosten.com/"
+            },
+            {
+                name : "Electroimpact Inc.",
+                imgSrc: "sponsor3.png",
+                link : "https://www.electroimpact.com/"
+            },
+            {
+                name : "Janicki Industries, Inc.",
+                imgSrc: "sponsor4.png",
+                link : "https://www.janicki.com/"
+            },
+            {
+                name : "AkzoNobel N.V.",
+                imgSrc: "sponsor5.png",
+                link : "https://www.akzonobel.com/"
+            },
+            {
+                name : "Breedt Production Tooling and Design",
+                imgSrc: "sponsor6.png",
+                //  TODO: replace the following link with "http://www.bptdesign.com/" when that is up
+                link : "https://www.facebook.com/Breedt-Production-Tooling-Design-595491847134307/"
+            },
+            {
+                name : "Claroworks Product Development",
+                imgSrc: "sponsor7.png",
+                link : "http://www.claroworks.com/"
+            },
+            {
+                name : "Click Bond, Inc.",
+                imgSrc: "sponsor8.png",
+                link : "http://clickbond.com/"
+            },
+            {
+                name : "Color Craft Inc.",
+                imgSrc: "sponsor9.png",
+                link : "http://colorcraftinc.com/"
+            },
+            {
+                name : "Dive Xtras",
+                imgSrc: "sponsor10.png",
+                link : "https://dive-xtras.com/"
+            },
+            {
+                name : "Fiberlay Inc",
+                imgSrc: "sponsor11.png",
+                link : "http://www.fiberlay.com/"
+            },
+            {
+                name : "Fluke Corporation",
+                imgSrc: "sponsor12.png",
+                link : "http://www.fluke.com/"
+            },
+            {
+                name : "Hexcel Corporation",
+                imgSrc: "sponsor13.png",
+                link : "http://www.hexcel.com/"
+            },
+            {
+                name : "Lighthouse Diving Center, Inc.",
+                imgSrc: "sponsor14.png",
+                link : "http://www.lighthousediving.com/"
+            },
+            {
+                name : "Northwest School of Wooden BoatBuilding",
+                imgSrc: "sponsor15.png",
+                link : "http://www.nwswb.edu/"
+            },
+            {
+                name : "Pacific Research Laboratories, Inc.",
+                imgSrc: "sponsor16.png",
+                link : "http://www.pacific-research.com/"
+            },
+            {
+                name : "The Society of Naval Architects and Marine Engineers",
+                imgSrc: "sponsor17.png",
+                link : "http://www.sname.org/home"
+            },
+            {
+                name : "Tap Plastics Inc.",
+                imgSrc: "sponsor18.png",
+                link : "http://www.tapplastics.com/"
+            }
+        ];
 
     }
 })()

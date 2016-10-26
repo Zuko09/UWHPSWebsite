@@ -264,11 +264,8 @@
     <!-- Sponsors -->
     <div class="container" style="margin: 0px; width: 100vw; color: #337ab7; background:white;">
         <div class="row" style="text-align:center; margin-top: 20px;">
-            <div ng-repeat="i in sponsor_array_1 track by $index" style="display:inline-block;">
-                <img src="{{i}}" height="150px" width="200px;" style="margin: 10px;">
-            </div>
-            <div ng-repeat="i2 in sponsor_array_2 track by $index" style="display:inline-block;">
-                <img src="{{i2}}" height="150px" width="350px;" style="margin: 10px;">
+            <div ng-repeat="s in sponsor_array track by $index" style="display:inline-block;">
+                <img src="{{s.imgSrc}}" alt="{{s.name}}">
             </div>
         </div>
     </div>
