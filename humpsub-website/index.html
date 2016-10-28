@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="css/navbar.css"/> -->
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -44,7 +45,7 @@
 <body>
 
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><!--<i class="fa fa-bars"></i>-->Menu</a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
@@ -71,6 +72,18 @@
             </li>
         </ul>
     </nav>
+
+    <!-- <div class="dotstyle dotstyle-scaleup">
+		<h2>Scale up</h2>
+		<ul>
+			<li class="current"><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div> -->
 
     <!-- Header -->
     <header id="top" class="header full">
@@ -135,12 +148,15 @@
                                 <h4 style="font-size:26px;">
                                     {{subteam.name}}
                                 </h4>
-                                <a href="#panel" class="btn btn-light" ng-click="showTheseDetails($index)">Learn More</a>
+                                <a href="#panel" class="btn btn-sm btn-light" ng-click="showTheseDetails($index)">Learn More</a>
                             </div>
                         </div>
 
                     </div>
                     <!-- /.row (nested) -->
+                    <a href="#team-roster" id="about-next-button">
+                        <i class="fa fa-angle-down fa-5x" style="color:#ffffff; opacity:0.9"></i>
+                    </a>
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -180,12 +196,12 @@
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <div class="row">
+            <div class="row center">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Our Work</h2>
+                    <h2>Photo Gallery</h2>
                     <hr class="small">
-                    <div class="row" style="display:block; overflow:auto; background-color:white;">
-                        <div class="col-sm-4" ng-repeat="item in portfolio track by $index">
+                    <div class="row center " style="background-color:white; text-align: center">
+                        <div class="col-sm-3" ng-repeat="item in portfolio track by $index">
                             <div class="portfolio-item">
                                 <a href="#">
                                     <img class="img-portfolio img-responsive" src="{{item.src}}" style="height: 30vh;">
@@ -205,27 +221,30 @@
     </section>
 
     <!-- Call to Action -->
-    <div id="sponsor" class="call-to-action bg-primary">
+    <div id="sponsor" class="call-to-action bg-primary" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h3>Help our Team Achieve New Heights!</h3>
                     <a href="" class="btn btn-lg btn-light" ng-click="showSponsorPitch()">Sponsor Us!</a>
                     <a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=2&source=EDZ" class="btn btn-lg btn-dark">Donate!</a>
-                    <a href="" class="btn btn-lg btn-light" ng-click="showMailingList()">Follow Us!</a>
+                    <a href="#sponsor" class="btn btn-lg btn-light" ng-click="showMailingList()">Follow Us!</a>
                 </div>
             </div>
         </div>
         <div id="spacer" style="height: 0px;"></div>
-        <div id="mailing-list" ng-show="isShowingMailingList">
-            Join our Mailing List!
-            <form style="color:black;">
+
+    <div id="spacer" style="height: 50px;"></div>
+            <div style="color: white" id="mailing-list" class="text-center" ng-show="isShowingMailingList">
+            <h1>Join our Mailing List!</h1>
+            <form style="color:white; font-size:18px; font-family:Raleway;">
                 Name:<br>
-                <input id="mailing-list-name" type="text" name="firstname"><br>
+                <input style="color:black; font-family:Raleway;" id="mailing-list-name" type="text" name="firstname" placeholder="John Doe"><br><br>
                 Email:<br>
-                <input id="mailing-list-email" type="text" name="lastname">
+                <input style="color:black; font-family:Raleway;" id="mailing-list-email" type="text" placeholder="john@doe.com" name="lastname">
             </form>
-            <button type="submit" style="color: black;" onclick="writeNewEmail()"> Submit </buton>
+            <br>
+            <button type="submit" style="color: black;" onclick="writeNewEmail()" class="btn btn-lg btn-light"> Sign me up! </button>
         </div>
         <div ng-show="isShowingSponsorPitch">
             <div class="container">
@@ -238,12 +257,15 @@
                 </div>
             </div>
         </div>
+        <a href="#portfolio" id="about-next-button">
+            <i class="fa fa-angle-down fa-5x" style="color:#ffffff; opacity:0.9"></i>
+        </a>
     </div>
 
     <!-- Sponsors -->
-    <div class="container full" style="margin: 0px; width: 100vw; color: #337ab7; background:white;">
+    <div class="container" style="margin: 0px; width: 100vw; color: #337ab7; background:white;">
         <div>
-            <input type="text" name="sponsorName" ng-model="sponsorName"><br>
+            <!-- <input type="text" name="sponsorName" ng-model="sponsorName"><br> -->
 
             <div class="row" style="text-align:center; margin-top: 20px;">
                 <div ng-repeat="i in sponsor_array_1 track by $index" style="display:inline-block;" class="sponsor-logo col-sm-4">
@@ -286,7 +308,7 @@
                 </div>
             </div>
         </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><!--<i class="fa fa-chevron-up fa-fw fa-1x"></i>-->Top</a>
 
     </footer>
 

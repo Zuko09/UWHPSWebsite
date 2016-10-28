@@ -168,19 +168,20 @@
             {src : "img/portfolio/portfolio-3.jpg"},
             {src : "img/portfolio/portfolio-4.jpg"},
             {src : "img/portfolio/portfolio-5.jpg"},
-            {src : "img/portfolio/portfolio-6.jpg"},
-            {src : "img/portfolio/portfolio-1.jpg"},
-            {src : "img/portfolio/portfolio-2.jpg"},
-            {src : "img/portfolio/portfolio-3.jpg"},
-            {src : "img/portfolio/portfolio-4.jpg"},
-            {src : "img/portfolio/portfolio-5.jpg"},
-            {src : "img/portfolio/portfolio-6.jpg"}
+            {src : "img/portfolio/portfolio-7.jpg"},
+            {src : "img/portfolio/portfolio-8.jpg"},
+            {src : "img/portfolio/portfolio-9.jpg"},
+            {src : "img/portfolio/portfolio-10.png"},
+            {src : "img/portfolio/portfolio-11.jpg"},
+            {src : "img/portfolio/portfolio-12.jpg"},
+            {src : "img/portfolio/portfolio-13.jpg"},
+            {src : "img/portfolio/portfolio-14.jpg"}
         ];
-
+        $scope.initialPortfolioSize = 8;
         $scope.portfolio = new Array();
         $scope.initializePortfolio = function() {
             $scope.portfolio = [];
-            for(var i = 0; i < 6; i++) {
+            for(var i = 0; i < $scope.initialPortfolioSize; i++) {
                 $scope.portfolio.push($scope.fullPortfolio[i]);
             }
         }
@@ -188,7 +189,7 @@
         $scope.isShowingMore = false;
         $scope.showMore = function() {
             $scope.isShowingMore = true;
-            for(var i = 6; i < $scope.fullPortfolio.length; i++) {
+            for(var i = $scope.initialPortfolioSize; i < $scope.fullPortfolio.length; i++) {
                 $scope.portfolio.push($scope.fullPortfolio[i]);
             }
         }
