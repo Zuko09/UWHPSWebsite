@@ -31,8 +31,8 @@
                 members : [
                   {name : 'Riley Harris', link: "https://www.linkedin.com/in/riley-harris-575297124"},
                   {name : 'Sharon Luo', link: "https://www.linkedin.com/in/sharon-luo"},
-                  {name : 'Robert Karren', link: "https://www.linkedin.com/in/kyleahhess"},
-                  {name : 'Kyleah Hess', link: "https://www.linkedin.com/in/chunkatherine"},
+                  {name : 'Robert Karren', link: ""},
+                  {name : 'Kyleah Hess', link: "https://www.linkedin.com/in/kyleahhess"},
                   {name : 'Anna Schmitz', link: ""},
                   {name : 'Sean Lam', link: ""}
                 ]
@@ -99,6 +99,9 @@
                 members : [
                   {name : 'Robert Karren', link: ""},
                   {name : 'Joseph Zacharin', link: "https://www.linkedin.com/in/joseph-zacharin-715064126"},
+                  {name : 'Riley Harris', link: "https://www.linkedin.com/in/riley-harris-575297124"},
+                  {name : 'Dominic Roarbush', link: ""},
+                  {name : 'Carol Nishikawa', link: ""},
                   {name : 'Cassie Riel', link: "https://www.linkedin.com/in/cassie-riel-995650a2"},
                   {name : 'Colin Katagiri', link: "https://www.linkedin.com/in/colinkatagiri"},
                   {name : 'Andrew Farrell', link: "https://www.linkedin.com/in/andrew-farrell-771a70100"},
