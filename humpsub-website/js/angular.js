@@ -31,8 +31,8 @@
                 members : [
                   {name : 'Riley Harris', link: "https://www.linkedin.com/in/riley-harris-575297124"},
                   {name : 'Sharon Luo', link: "https://www.linkedin.com/in/sharon-luo"},
-                  {name : 'Robert Karren', link: ""},
-                  {name : 'Kyleah Hess', link: "https://www.linkedin.com/in/kyleahhess"},
+                  {name : 'Robert Karren', link: "https://www.linkedin.com/in/kyleahhess"},
+                  {name : 'Kyleah Hess', link: "https://www.linkedin.com/in/chunkatherine"},
                   {name : 'Anna Schmitz', link: ""},
                   {name : 'Sean Lam', link: ""}
                 ]
