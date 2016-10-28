@@ -278,7 +278,7 @@
         $scope.importantSponsors = [
             {
                 img : "img/hps-sponsors/fluke.png",
-                link : "https://www.fluke.com"
+                link : "http://www.fluke.com"
             },
             {
                 img : "img/hps-sponsors/dive.png",
@@ -290,7 +290,7 @@
             },
             {
                 img : "img/hps-sponsors/sname.png",
-                link : "https://wwww.sname.org/home"},
+                link : "https://www.sname.org/home"},
             {
                 img : "img/hps-sponsors/umbra.png",
                 link : "https://www.umbragroup.com/en/"
