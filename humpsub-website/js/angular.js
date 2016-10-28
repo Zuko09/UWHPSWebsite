@@ -290,7 +290,7 @@
             },
             {
                 img : "img/hps-sponsors/sname.png",
-                link : "https://www.sname.org/home"},
+                link : "http://www.sname.org/home"},
             {
                 img : "img/hps-sponsors/umbra.png",
                 link : "https://www.umbragroup.com/en/"
