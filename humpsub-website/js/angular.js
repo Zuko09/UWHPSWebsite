@@ -12,49 +12,97 @@
 
         // ROSTER STUFF
         $scope.roster = [
+            // {
+            //     name : 'Team Leads',
+            //     members : [
+            //       {name : 'Connor Hughes', link: "www.linkedin.com/in/connor-hughes-43495b110"},
+            //       {name : 'Riley Harris', link: "https://www.linkedin.com/in/riley-harris-575297124"},
+            //       {name : 'Andrew Farrell', link: "https://www.linkedin.com/in/andrew-farrell-771a70100"},
+            //       {name : 'Jack Gentsch', link: "https://www.linkedin.com/in/jack-gentsch"},
+            //       {name : 'Ahrif McKee', link: "https://www.linkedin.com/in/ahrif-mckee-47a536129"},
+            //       {name : 'Riley Lyle', link: ""},
+            //       {name : 'Robert Karren', link: ""},
+            //       {name : 'Joseph Zacharin', link: "https://www.linkedin.com/in/joseph-zacharin-715064126"},
+            //       {name : 'Lucas Campbell', link: ""}
+            //     ]
+            // },
             {
                 name : 'Hull Team',
                 members : [
-                  {name : 'Jack Gentsch', link: "https://www.linkedin.com"},
-                  {name : 'Joe Joe Jimenz', link: "https://www.linkedin.com"},
-                  {name : 'Aman Arya', link: "https://www.linkedin.com"},
-                  {name : 'Connor Moen', link: "https://www.linkedin.com"},
-                  {name : 'Connor Moen', link: "https://www.linkedin.com"},
-                  {name : 'Connor Moen', link: "https://www.linkedin.com"},
-                  {name : 'Connor Moen', link: "https://www.linkedin.com"},
-                  {name : 'Connor Moen', link: "https://www.linkedin.com"},
-                  {name : 'Connor Moen', link: "https://www.linkedin.com"},
-                  {name : 'Connor Moen', link: "https://www.linkedin.com"},
-                  {name : 'Connor Moen', link: "https://www.linkedin.com"},
-                  {name : 'Connor Moen', link: "https://www.linkedin.com"},
-                  {name : 'Connor Moen', link: "https://www.linkedin.com"}
+                  {name : 'Riley Harris', link: "https://www.linkedin.com/in/riley-harris-575297124"},
+                  {name : 'Sharon Luo', link: "https://www.linkedin.com/in/sharon-luo"},
+                  {name : 'Robert Karren', link: ""},
+                  {name : 'Kyleah Hess', link: "www.linkedin.com/in/kyleahhess"},
+                  {name : 'Anna Schmitz', link: ""},
+                  {name : 'Sean Lam', link: ""}
                 ]
             },
             {
-                name : 'Fin Team',
+                name : 'Controls Team',
                 members : [
-                  {name : 'Jack Gentsch', link: "https://www.linkedin.com"},
-                  {name : 'Joe Joe Jimenz', link: "https://www.linkedin.com"},
-                  {name : 'Aman Arya', link: "https://www.linkedin.com"},
-                  {name : 'Connor Moen', link: "https://www.linkedin.com"}
+                  {name : 'Andrew Farrell', link: "https://www.linkedin.com/in/andrew-farrell-771a70100"},
+                  {name : 'Harpreet	Singh', link: ""},
+                  {name : 'Nana	Yamagata', link: ""},
+                  {name : 'Thuy	Nguyen', link: ""},
+                  {name : 'Nikolas Johnson', link: ""},
+                  {name : 'Katherine Chun', link: "https://www.linkedin.com/in/chunkatherine"},
+                  {name : 'Joseph Zacharin', link: "https://www.linkedin.com/in/joseph-zacharin-715064126"},
+                  {name : 'Cassie Riel', link: "https://www.linkedin.com/in/cassie-riel-995650a2"},
+                  {name : 'Ashley Huynh', link: ""}
                 ]
             },
             {
                 name : 'Electronics Team',
                 members : [
-                  {name : 'Jack Gentsch', link: "https://www.linkedin.com"},
-                  {name : 'Joe Joe Jimenz', link: "https://www.linkedin.com"},
-                  {name : 'Aman Arya', link: "https://www.linkedin.com"},
-                  {name : 'Connor Moen', link: "https://www.linkedin.com"}
+                  {name : 'Jack Gentsch', link: "https://www.linkedin.com/in/jack-gentsch"},
+                  {name : 'Joe Jimenez', link: ""},
+                  {name : 'Varun Viswanath', link: "https://www.linkedin.com/in/varun-viswanath-aab70345"},
+                  {name : 'Jack Mask', link: "https://www.linkedin.com/in/jmask"},
+                  {name : 'Brian Liu', link: ""},
+                  {name : 'Michael Essaf', link: ""},
+                  {name : 'Jocelyn Ma', link: ""},
+                  {name : 'Gabrielle Pang', link: ""},
+                  {name : 'Timmy Lee', link: ""},
+                  {name : 'Tremaine	Ng', link: "https://www.linkedin.com/in/trenng"},
+                  {name : 'Daniel Tran', link: "https://www.linkedin.com/in/daniel-tran-3716a4b9"}
                 ]
             },
             {
-                name : 'Human Team',
+                name : 'Drivetrain Team',
                 members : [
-                  {name : 'Jack Gentsch', link: "https://www.linkedin.com"},
-                  {name : 'Joe Joe Jimenz', link: "https://www.linkedin.com"},
-                  {name : 'Aman Arya', link: "https://www.linkedin.com"},
-                  {name : 'Connor Moen', link: "https://www.linkedin.com"}
+                  {name : 'Ahrif McKee', link: "https://www.linkedin.com/in/ahrif-mckee-47a536129"},
+                  {name : 'Robert Reiten', link: ""},
+                  {name : 'Kanika Aggarwal', link: "https://www.linkedin.com/in/kanika-aggarwal-492304118"},
+                  {name : 'Zachary Tully', link: ""},
+                  {name : 'Brendan Greetham', link: "https://www.linkedin.com/in/brendan-greetham-796a9a111"},
+                  {name : 'Matt Kim', link: ""},
+                  {name : 'Tristan Haider', link: ""},
+                  {name : 'Zach	Hasson', link: "https://www.linkedin.com/in/zachary-hasson-347815125"}
+                ]
+            },
+            {
+                name : 'Propulsion Team',
+                members : [
+                  {name : 'Riley Lyle', link: ""},
+                  {name : 'Lucas Campbell', link: "https://www.linkedin.com/in/lucas-campbell-a46210114"},
+                  {name : 'Echo	Wood', link: ""},
+                  {name : 'Piergiorgio Rojas', link: ""},
+                  {name : 'Stuart Dickson', link: ""},
+                  {name : 'Aashni Purohit', link: ""},
+                  {name : 'Nicole Tsang', link: "https://www.linkedin.com/in/nicole-tsang-6b7552129"},
+                  {name : 'John	Pham', link: ""},
+                  {name : 'Karl	Skeel', link: ""}
+                ]
+            },
+            {
+                name : 'Dive Team',
+                members : [
+                  {name : 'Robert Karren', link: ""},
+                  {name : 'Joseph Zacharin', link: "https://www.linkedin.com/in/joseph-zacharin-715064126"},
+                  {name : 'Cassie Riel', link: "https://www.linkedin.com/in/cassie-riel-995650a2"},
+                  {name : 'Colin Katagiri', link: "https://www.linkedin.com/in/colinkatagiri"},
+                  {name : 'Andrew Farrell', link: "https://www.linkedin.com/in/andrew-farrell-771a70100"},
+                  {name : 'Ryland Bryant', link: "https://www.linkedin.com/in/ryland-bryant-a7238519"}
                 ]
             }
         ];
@@ -76,17 +124,16 @@
 
         $scope.reset();
 
-        $scope.showSubteam = function(index, memeber){
+        $scope.showSubteam = function(index, member){
             if($scope.is_showing_members == false) {
                 $scope.showTheseDetails(index);
             } else {
-                $window.location.href = memeber.link;
+                $window.location.href = member.link;
             }
         };
         $scope.showThisSubteam = function(index) {
             var len = $scope.roster[index].members.length;
             var temp = [];
-            console.log("roster"+$scope.roster);
             for(var i=0; i < len; i++) {
                 temp[i] = $scope.roster[index].members[i];
             }
@@ -106,44 +153,51 @@
                 name : "The Hull Team",
                 description : "It all starts with hydrodynamics. An innovative team optimizes the sub’s hull for unmatched performance.",
                 glyph : "fa fa-ship fa-stack-1x text-primary",
-                details : ""
+                details : "",
+                img : "img/subteam/subteam-2.png"
             },
             {
                 name : "The Controls Team",
                 description : "Two words: slalom gates. This team of engineers enables the pilot to navigate the racecourse at the touch of a finger.",
                 glyph : "fa fa-compass fa-stack-1x text-primary",
-                details : ""
+                details : "",
+                img : "img/subteam/subteam-5.png"
             },
             {
                 name : "The Electronics Team",
                 description : "An eccentric team of electrical engineers, computer scientists, and magicians develops the future of submarine control.",
                 glyph : "fa fa-gamepad fa-stack-1x text-primary",
-                details : ""
+                details : "",
+                img : "img/subteam/subteam-6.JPG"
             },
             {
                 name : "The Drivetrain Team",
                 description : "A hardworking team of friction-fighters takes the power seamlessly from the pilot to the propeller.",
                 glyph : "fa fa-cogs fa-stack-1x text-primary",
-                details : ""
+                details : "",
+                img : "img/subteam/subteam-1.png"
             },
             {
                 name : "The Propulsion Team",
                 description : "A sharp team of aeronautical and mechanical engineers designs the most efficient propeller known to man(power).",
                 glyph : "glyphicon glyphicon-dashboard glyphicon-stack-1x text-primary",
-                details : ""
+                details : "",
+                img : "img/subteam/subteam-3.png"
             },
             {
                 name : "The Divers",
                 description : "An elite team of highly-trained pilots and support divers execute our underwater operations without a hitch.",
                 glyph : "fa fa-street-view fa-stack-1x text-primary",
-                details : ""
+                details : "",
+                img : "img/subteam/subteam-4.png"
             }
         ]
 
         $scope.showTheseDetails = function(i) {
             $scope.showDetails = true;
             $scope.infopanelTitle = $scope.teamInfo[i].name;
-            $scope.infopanelDetails = $scope.teamInfo[i].details;
+            $scope.infopanelDetails = $scope.teamInfo[i].description;
+            $scope.infopanelImage = $scope.teamInfo[i].img;
             $scope.showThisSubteam(i);
         }
 
@@ -210,21 +264,48 @@
         $scope.sponsor_array_1 = ["img/hps-sponsors/sponsor1.png",
                                 "img/hps-sponsors/sponsor2.png",
                                 "img/hps-sponsors/sponsor3.png",
-                                "img/hps-sponsors/sponsor4.png",
+
                                 "img/hps-sponsors/sponsor5.png",
                                 "img/hps-sponsors/sponsor6.png",
                                 "img/hps-sponsors/sponsor7.png",
                                 "img/hps-sponsors/sponsor8.png",
                                 "img/hps-sponsors/sponsor9.png",
-                                "img/hps-sponsors/sponsor10.png"
                             ];
-        $scope.sponsor_array_2 =  ["img/hps-sponsors/sponsor11.png",
-                                  "img/hps-sponsors/sponsor12.png",
-                                  "img/hps-sponsors/sponsor13.png",
-                                  "img/hps-sponsors/sponsor14.png",
-                                  "img/hps-sponsors/sponsor15.png",
-                                  "img/hps-sponsors/sponsor16.png"
-                              ];
+
+        $scope.importantSponsors = [
+            {
+                img : "img/hps-sponsors/fluke.png",
+                link : "https://www.fluke.com"
+            },
+            {
+                img : "img/hps-sponsors/dive.png",
+                link : "https://dive-xtras.com"
+            },
+            {
+                img : "img/hps-sponsors/glosten.png",
+                link : "http://glosten.com"
+            },
+            {
+                img : "img/hps-sponsors/sname.png",
+                link : "https://wwww.sname.org/home"},
+            {
+                img : "img/hps-sponsors/umbra.png",
+                link : "https://www.umbragroup.com/en/"
+            }
+        ];
+        $scope.goTo = function(link) {
+            $window.location.href = link;
+    };
+
+        // $scope.sponsor_array_2 =  ["img/hps-sponsors/sponsor11.png",
+        //                           "img/hps-sponsors/sponsor12.png",
+        //                           "img/hps-sponsors/sponsor13.png",
+        //                           "img/hps-sponsors/sponsor14.png",
+        //                           "img/hps-sponsors/sponsor15.png",
+        //                           "img/hps-sponsors/sponsor16.png"
+        //                       ];
+        //                                 "img/hps-sponsors/sponsor4.png",
+        //        "img/hps-sponsors/sponsor10.png"
 
 
     }

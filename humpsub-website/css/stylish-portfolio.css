@@ -12,6 +12,14 @@
     opacity: 0.3;
 }
 
+#special > div > img {
+    margin: 30px;
+}
+
+#special > div:hover {
+    outline: 2px solid #337ab7;
+}
+
 .infopanel {
     text-align: center;
 }
@@ -21,8 +29,13 @@
 }
 
 .sponsor-logo {
-    height: 35vh;
+    display:block;
+    max-height:35vh;
+    height:35vh;
+    height: auto;
+    width:auto;
     margin: 10px;
+
 }
 
 .sponsor-logo > img {

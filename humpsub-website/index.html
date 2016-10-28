@@ -92,7 +92,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1 style="font-family:Raleway; font-size:6vh; margin:0px;  ">Who are we?</h1>
+                    <h1 style="font-family:Raleway; font-size:6vh; margin:0px;">Who are we?</h1>
                         <!-- <p class="lead">We are engineers. We are designers. <br> We are machinists, coders, athletes, and divers.<br> </p> -->
                         <div id="spacer" style="height: 5.0vh;"></div>
                         <p class="lead">We are a community of driven students from across the University of Washington <br> who believe that everyone is capable of impactful and original work.<br> </p>
@@ -103,8 +103,9 @@
                         <div id="spacer" style="height: 5.0vh;"></div>
 
                         <p class="lead" style="font-size: 4.8vh;">Welcome, to UW Human Powered Sub.</p>
-                        <div id="spacer" style="height: 3.0vh;"></div>
+                        <img src="img/hps-logo.jpg" style="height: auto; width: 128px;">
 
+                        <div id="spacer" style="height: 1.0vh;"></div>
                         <!-- <div id="spacer" style="height: 30px;"></div> -->
 
                         <a href="#services" id="about-next-button"><i class="fa fa-angle-down fa-5x" style="color:#333;"></i></a>
@@ -157,29 +158,43 @@
     </section>
 
     <div id="panel" class="infopanel" ng-show="showDetails" style="height: 45vh;">
-        <h1 style="font-size:4.5em; font-weight:700;">{{infopanelTitle}}</h1>
-        <p>{{infopanelDetails}}</p>
-        <img src="img/humpsub.jpg" style="height: 128px; width: 128px;">
+        <div class="container">
+            <h1 style="font-size:4.5em; font-weight:700;">{{infopanelTitle}}</h1>
+            <div class="row">
+              <div class="col-sm-4">
+                  <img src="{{infopanelImage}}" class="" style="height: 180px; width: auto; margin: 0 20px;">
+              </div>
+              <div class="col-sm-8">
+                  <h3>{{infopanelDetails}}</h3>
+              </div>
+            </div>
+
+        </div>
     </div>
 
-    <!-- Callout -->
+    <!-- roster -->
     <div id="team-roster" class="callout" style="height: 55vh;">
         <p class="btn btn-dark btn-lg" style="margin-left:20px; margin-top: 20px; position:absolute;"
         ng-show="is_showing_members" ng-click="reset()">Back</p>
-        <div class="text-vertical-center" style="text-align: center; padding-top:20px;">
+        <div class="text-vertical-center" style="text-align: center; padding-top:20px; ">
             <h1>{{title}}</h1>
             <svg height="10" width="100%">
                 <line x1="25%" y1="5" x2="75%" y2="5" class="svg-line"/>
             </svg>
-            <ul id="roster">
+            <ul id="roster" class="col-md-8 col-md-offset-2">
                 <li class="roster-subsection"
                 ng-repeat="object in display track by $index"
-                ng-click="showSubteam($index, object)">{{object.name}}
+                ng-click="showSubteam($index, object)"
+                style="margin: 10px 0px;">{{object.name}}
                 </li>
             </ul>
-            <a href="#portfolio" id="about-next-button">
-                <i class="fa fa-angle-down fa-5x" style="color:#ffffff; opacity:0.9"></i>
-            </a>
+            <div id="spacer" style="height: 10px;"></div>
+
+            <div style="margin-left:20px; margin-top: 20px; position:absolute;">
+                <a href="#portfolio" id="about-next-button" style="margin-left:45vw; margin-top: 10vh; position:absolute;">
+                    <i class="fa fa-angle-down fa-5x" style="color:#ffffff; opacity:0.9"></i>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -215,7 +230,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>Help our Team Achieve New Heights!</h3>
+                    <h1 style="">Help our Team Achieve New Heights!</h1>
                     <a href="#sponsor" class="btn btn-lg btn-light" ng-click="showSponsorPitch()">Sponsor Us!</a>
                     <a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=2&source=EDZ" class="btn btn-lg btn-dark">Donate!</a>
                     <a href="#sponsor" class="btn btn-lg btn-light" ng-click="showMailingList()">Follow Us!</a>
@@ -224,9 +239,8 @@
         </div>
         <div id="spacer" style="height: 0px;"></div>
 
-    <div id="spacer" style="height: 50px;"></div>
-            <div style="color: white" id="mailing-list" class="text-center" ng-show="isShowingMailingList">
-            <h1>Join our Mailing List!</h1>
+        <div style="color: white" id="mailing-list" class="text-center" ng-show="isShowingMailingList">
+            <h2>Join our Mailing List!</h2>
             <form style="color:white; font-size:18px; font-family:Raleway;">
                 Name:<br>
                 <input style="color:black; font-family:Raleway;" id="mailing-list-name" type="text" name="firstname" placeholder="John Doe"><br><br>
@@ -240,30 +254,29 @@
             <div class="container">
                 <div class="row">
                     <div class="text-center">
-                        <h1 style="font-family:Raleway;">Benefits Of Being A Sponsor</h1>
-                        <p class="lead">We are awesome</p>
-                        <a href="mailto:hps@uw.edu" class="btn btn-lg btn-light">Sponsor Us!</a>
+                        <h1 style="font-family:Raleway;">Become one of our sponsors today!</h1>
+                        <p class="lead">Contact <a href="mailto:uwhpsub@gmail.com" style="color:white; text-decoration:underline;">uwhpsub@gmail.com</a> to learn more</p>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="#portfolio" id="about-next-button">
+        <!-- <a href="#portfolio" id="about-next-button">
             <i class="fa fa-angle-down fa-5x" style="color:#ffffff; opacity:0.9"></i>
-        </a>
+        </a> -->
     </div>
 
     <!-- Sponsors -->
     <div class="container" style="margin: 0px; width: 100vw; color: #337ab7; background:white;">
-        <div>
+        <div style="text-align: center; ">
             <!-- <input type="text" name="sponsorName" ng-model="sponsorName"><br> -->
-
-            <div class="row" style="text-align:center; margin-top: 20px;">
-                <div ng-repeat="i in sponsor_array_1 track by $index" style="display:inline-block;" class="sponsor-logo col-sm-4">
-                    <img src="{{i}}" height="150px" width="200px;">
+            <h1 style="font-weight:700; font-family: Raleway; font-size: 50px; color: black; opacity: 0.9; text-shadow: 1px 3px 2px rgba(0,0,0,0.3);"> Huge Shoutout To Our Sponsors!<br>We Couldn't Do It Without Your Support!</h1>
+            <div id="special" class="row" style="text-align:center; margin-top: 20px;">
+                <div ng-repeat="sponsor in importantSponsors track by $index" style="display:inline-block;" class="sponsor-logo">
+                    <img src="{{sponsor.img}}" ng-click="goTo(sponsor.link)" style="height:auto; padding:20px; width:19vw;">
                 </div>
-                <div ng-repeat="i2 in sponsor_array_2 track by $index" style="display:inline-block;" class="sponsor-logo">
+                <!-- <div ng-repeat="i2 in sponsor_array_2 track by $index" style="display:inline-block;" class="sponsor-logo">
                     <img src="{{i2}}" height="150px" width="350px;" style="margin: 10px;">
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
