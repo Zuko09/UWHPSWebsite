@@ -157,8 +157,9 @@
         }
 
         $scope.showSponsorPitch = function() {
-            $scope.isShowingSponsorPitch = true;
             $scope.isShowingMailingList = false;
+            $scope.isShowingSponsorPitch = true;
+
         }
 
         // Portfolio
@@ -201,7 +202,6 @@
 
 
         $scope.sponsorName = "";
-
 
         $scope.sponsor_count = 16;
 
