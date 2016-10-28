@@ -32,7 +32,7 @@
                   {name : 'Riley Harris', link: "https://www.linkedin.com/in/riley-harris-575297124"},
                   {name : 'Sharon Luo', link: "https://www.linkedin.com/in/sharon-luo"},
                   {name : 'Robert Karren', link: ""},
-                  {name : 'Kyleah Hess', link: "www.linkedin.com/in/kyleahhess"},
+                  {name : 'Kyleah Hess', link: "https://www.linkedin.com/in/kyleahhess"},
                   {name : 'Anna Schmitz', link: ""},
                   {name : 'Sean Lam', link: ""}
                 ]
@@ -179,7 +179,7 @@
             },
             {
                 name : "The Propulsion Team",
-                description : "A sharp team of aeronautical and mechanical engineers designs the most efficient propeller known to man(power).",
+                description : "A sharp team of aeronautical and mechanical engineers design the most efficient propeller known to man(power).",
                 glyph : "glyphicon glyphicon-dashboard glyphicon-stack-1x text-primary",
                 details : "",
                 img : "img/subteam/subteam-3.png"
