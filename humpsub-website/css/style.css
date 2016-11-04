@@ -1,0 +1,137 @@
+/* Custom Styles */
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Raleway";
+}
+
+.bold {
+	font-weight: 700;
+}
+
+/* Header */
+
+.header {
+	background-image: url(../img/purple_seattle.jpg);
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.sidebar-nav > .sidebar-brand a {
+    color: #fff;
+}
+
+#about-next-button:hover {
+    opacity: 0.3;
+}
+
+#special > div > img {
+    margin: 30px;
+}
+
+#special > div:hover {
+    outline: 2px solid #337ab7;
+}
+
+.infopanel {
+    text-align: center;
+}
+
+.full {
+    height: 100vh;
+}
+
+.sponsor-logo {
+    display:block;
+    max-height:35vh;
+    height:35vh;
+    height: auto;
+    width:auto;
+    margin: 10px;
+
+}
+
+.sponsor-logo > img {
+    height: 35vh;
+    width: 35vh;
+}
+
+.standout-text-dark {
+    color: #fff;
+    text-shadow: 3px 5px 4px rgba(0,0,0,0.6);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.standout-text-light {
+	color: #000;
+	text-shadow: 1px 3px 2px rgba(0,0,0,0.3);
+}
+
+.colored-text {
+    color: #337ab7
+}
+
+.svg-line {
+    stroke: white;
+    stroke-width: 1;
+}
+
+.line {
+    color: white;
+    border-color: white;
+    border-top: 1px solid;
+    display: block;
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 25px;
+    padding-top: 50px;
+    position: relative;
+}
+
+#roster-title {
+    color: #111;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 64px; font-weight: 700;
+    line-height: 64px;
+    margin: 0 0 0;
+    padding: 20px 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#roster {
+    text-align: center;
+
+}
+
+.roster-subsection {
+    width: 20vw;
+    font-size: 30px;
+    display: inline-block;
+    /*margin: 10px;
+    background-color: rgba(0, 0, 0, 0.3);*/
+}
+
+.roster-subsection:hover {
+    color: #e5c100
+}
+
+.text-vertical-top {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+    left: 0;
+}
+
+.text-vertical-top h1 {
+    margin-top: 20px;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.lead {
+    font-family: Raleway;
+    font-size: 24px;
+    line-height: 45px;
+}

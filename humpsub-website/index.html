@@ -11,17 +11,18 @@
 
     <title>UW Human Powered Sub Team</title>
 
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900' rel='stylesheet' type='text/css'>
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/css" href="css/navbar.css"/> -->
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900' rel='stylesheet' type='text/css'>
 
     <!-- AngularJS -->
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> -->
@@ -81,8 +82,8 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h2 class="standout-text-dark" style="font-weight:500">Mechanical Engineering</h2>
-            <h3 class="standout-text-dark" style="font-weight:500">University of Washington</h3>
+            <h2 class="standout-text-dark bold">Mechanical Engineering</h2>
+            <h3 class="standout-text-dark bold">University of Washington</h3>
             <div class="spacer" style="height: 20px"></div>
             <h1 class="standout-text-dark">Human Powered Submarine Team</h1>
             <br>
@@ -194,7 +195,7 @@
 
 
         </div>
-<!-- 
+<!--
         <a href="#portfolio" id="about-next-button" style="position: absolute; bottom: 0;">
             <i class="fa fa-angle-down fa-5x" style="color:#ffffff; opacity:0.9"></i>
         </a> -->
@@ -271,7 +272,8 @@
     <div class="container" style="margin: 0px; width: 98vw; color: #337ab7; background:white;">
         <div style="text-align: center; ">
             <!-- <input type="text" name="sponsorName" ng-model="sponsorName"><br> -->
-            <h1 style="font-weight:700; font-family: Raleway; font-size: 50px; color: black; opacity: 0.9; text-shadow: 1px 3px 2px rgba(0,0,0,0.3);"> Huge Shoutout To Our Sponsors!<br>We Couldn't Do It Without Your Support!</h1>
+            <h1 class="standout-text-light"> Huge Shoutout To Our Sponsors!</h1>
+            <h2 class="standout-text-light">We Couldn't Do It Without Your Support!</h2>
             <div id="special" class="row" style="text-align:center; margin-top: 20px;">
                 <div ng-repeat="sponsor in importantSponsors track by $index" style="display:inline-block;" class="sponsor-logo">
                     <img src="{{sponsor.img}}" ng-click="goTo(sponsor.link)" style="height:auto; padding:20px; width:19vw;">
