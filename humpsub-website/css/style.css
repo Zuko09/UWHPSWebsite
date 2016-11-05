@@ -1,17 +1,55 @@
 /* Custom Styles */
 
+/* Broad Defines */
+
+.full {
+    height: 100vh;
+}
+
 h1,h2,h3,h4,h5,h6 {
 	font-family: "Raleway";
 }
 
+/* For the following, see https://css-tricks.com/when-using-important-is-the-right-choice/ */
+
+.semibold {
+	font-weight: 500 !important;
+}
+
 .bold {
-	font-weight: 700;
+	font-weight: 700 !important;
 }
 
 /* Header */
 
 .header {
 	background-image: url(../img/purple_seattle.jpg);
+	background-attachment: fixed;
+}
+
+.text-vertical-center h1 {
+	font-weight: inherit;
+}
+
+.display-1 {
+	font-size: 6rem;
+	font-weight: 300;
+}
+.display-2 {
+	font-size: 5.5rem;
+	font-weight: 300;
+}
+.display-3 {
+	font-size: 4.5rem;
+	font-weight: 300;
+}
+.display-4 {
+	font-size: 3.5rem;
+	font-weight: 300;
+}
+.display-5 {
+	font-size: 2rem;
+	font-weight: 400;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -34,10 +72,6 @@ h1,h2,h3,h4,h5,h6 {
 
 .infopanel {
     text-align: center;
-}
-
-.full {
-    height: 100vh;
 }
 
 .sponsor-logo {
@@ -68,7 +102,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .colored-text {
-    color: #337ab7
+    color: #337ab7;
 }
 
 .svg-line {
@@ -76,22 +110,22 @@ h1,h2,h3,h4,h5,h6 {
     stroke-width: 1;
 }
 
-.line {
-    color: white;
-    border-color: white;
-    border-top: 1px solid;
-    display: block;
-    margin-left: 25%;
-    width: 50%;
-    margin-top: 25px;
-    padding-top: 50px;
-    position: relative;
+hr.line {
+	display: block;
+	position: relative;
+	width: 50%;
+	height: 0;
+	margin: 25px 25% -20px;
+	padding: 50px 0 0 0;
+    border-top: 1px white solid;
+	color: white;
 }
 
 #roster-title {
     color: #111;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 64px; font-weight: 700;
+    font-size: 64px;
+	font-weight: 700;
     line-height: 64px;
     margin: 0 0 0;
     padding: 20px 30px;
@@ -113,25 +147,18 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .roster-subsection:hover {
-    color: #e5c100
-}
-
-.text-vertical-top {
-    display: table-cell;
-    text-align: center;
-    vertical-align: top;
-    left: 0;
-}
-
-.text-vertical-top h1 {
-    margin-top: 20px;
-    padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
+    color: #e5c100;
 }
 
 .lead {
     font-family: Raleway;
     font-size: 24px;
     line-height: 45px;
+}
+
+.text-vertical-top {
+	display: table-cell;
+	text-align: center;
+	vertical-align: top;
+	left: 0;
 }
