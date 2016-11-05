@@ -2,6 +2,10 @@
 
 /* Broad Defines */
 
+body > section {
+	padding: 50px 0;
+}
+
 .full {
     height: 100vh;
 }
@@ -68,10 +72,6 @@ h1,h2,h3,h4,h5,h6 {
 
 #special > div:hover {
     outline: 2px solid #337ab7;
-}
-
-.infopanel {
-    text-align: center;
 }
 
 .sponsor-logo {

@@ -118,7 +118,7 @@
             <h1 class="display-2">How It All Comes Together</h1>
             <hr class="small">
             <div class="row">
-                <div class="col-xs-6 col-sm-6 col-md-4" ng-repeat="subteam in teamInfo track by $index">
+                <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="subteam in teamInfo track by $index">
                     <div class="service-item" style="margin-bottom:15px; margin-top:3.0vh;">
                         <span class="fa-stack fa-4x">
                             <i class="fa fa-circle fa-stack-2x"></i>
@@ -141,27 +141,26 @@
         </div>
     </section>
 
-    <!-- Random Pop-up Panel -->
-    <div id="panel" class="infopanel" ng-show="showDetails" style="height: 45vh;">
+    <!-- Random Pop-up Info Panel -->
+    <section id="panel" class="infopanel" ng-show="showDetails">
         <div class="container">
-            <h1 style="font-size:4.5em; font-weight:700;">{{infopanelTitle}}</h1>
+            <h2 class="display-3 text-center">{{infopanelTitle}}</h2>
             <div class="row">
-              <div class="col-sm-4">
+              <div class="col-sm-12 col-md-4">
                   <img src="{{infopanelImage}}" class="" style="height: 180px; width: auto; margin: 0 20px;">
               </div>
-              <div class="col-sm-8">
-                  <h3>{{infopanelDetails}}</h3>
+              <div class="col-sm-12 col-md-8">
+                  <p class="display-5">{{infopanelDetails}}</p>
               </div>
             </div>
-
         </div>
-    </div>
+    </section>
 
-    <!-- Roster -->
-    <div id="team-roster" class="callout" style="height: 55vh; position:relative;">
-        <p class="btn btn-dark btn-lg" style="margin-left:20px; margin-top: 20px; position:absolute;"
-        ng-show="is_showing_members" ng-click="reset()">Back</p>
-        <div class="text-vertical-center" style="text-align: center; padding-top:20px; ">
+    <!-- Team Roster -->
+    <section id="team-roster" class="callout">
+        <button class="btn btn-dark btn-lg" style="margin-left:20px; margin-top: 20px; position:absolute;"
+        ng-show="is_showing_members" ng-click="reset()">Back</button>
+        <div class="text-vertical-center text-center">
             <h1>{{title}}</h1>
             <hr class="line">
             <ul id="roster" class="col-md-8 col-md-offset-2">
@@ -179,7 +178,7 @@
         <a href="#portfolio" id="about-next-button" style="position: absolute; bottom: 0;">
             <i class="fa fa-angle-down fa-5x" style="color:#ffffff; opacity:0.9"></i>
         </a> -->
-    </div>
+    </section>
 
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
@@ -209,7 +208,7 @@
     </section>
 
     <!-- Call to Action -->
-    <div id="call-to-action" class="call-to-action bg-primary" >
+    <section id="call-to-action" class="call-to-action bg-primary" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -246,10 +245,10 @@
         <!-- <a href="#portfolio" id="about-next-button">
             <i class="fa fa-angle-down fa-5x" style="color:#ffffff; opacity:0.9"></i>
         </a> -->
-    </div>
+    </section>
 
     <!-- Sponsors -->
-    <div id="sponsor" class="container" style="margin: 0px; width: 98vw; color: #337ab7; background:white;">
+    <section id="sponsor" class="container" style="margin: 0px; width: 98vw; color: #337ab7; background:white;">
         <div style="text-align: center; ">
             <!-- <input type="text" name="sponsorName" ng-model="sponsorName"><br> -->
             <h1 class="standout-text-light"> Huge Shoutout To Our Sponsors!</h1>
@@ -263,7 +262,7 @@
                 </div> -->
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer style="color: white; background:#337ab7">
