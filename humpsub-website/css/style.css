@@ -14,6 +14,14 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: "Raleway";
 }
 
+p {
+	font-size: 18px;
+}
+
+input {
+	color: #000;
+}
+
 /* For the following, see https://css-tricks.com/when-using-important-is-the-right-choice/ */
 
 .semibold {
@@ -70,8 +78,39 @@ h1,h2,h3,h4,h5,h6 {
 	margin-top: 20px;
 }
 
+#roster-title {
+    color: #111;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 64px;
+	font-weight: 700;
+    line-height: 64px;
+    margin: 0 0 0;
+    padding: 20px 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .roster-subsection {
-	margin: 20px 0;
+    width: 20vw;
+    font-size: 30px;
+    display: inline-block;
+    margin: 10px;
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+}
+
+.roster-subsection:hover {
+    color: #e5c100;
+}
+
+/* Footer */
+
+footer {
+	color: #fff;
+	background:#337ab7;
+}
+
+footer a {
+	color: #fff;
 }
 
 /* Unclassified */
@@ -125,42 +164,8 @@ h1,h2,h3,h4,h5,h6 {
     color: #337ab7;
 }
 
-.svg-line {
-    stroke: white;
-    stroke-width: 1;
-}
-
 hr.line {
 	max-width: 50%;
-}
-
-#roster-title {
-    color: #111;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 64px;
-	font-weight: 700;
-    line-height: 64px;
-    margin: 0 0 0;
-    padding: 20px 30px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-#roster {
-    text-align: center;
-
-}
-
-.roster-subsection {
-    width: 20vw;
-    font-size: 30px;
-    display: inline-block;
-    /*margin: 10px;
-    background-color: rgba(0, 0, 0, 0.3);*/
-}
-
-.roster-subsection:hover {
-    color: #e5c100;
 }
 
 .lead {

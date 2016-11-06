@@ -178,27 +178,21 @@
 
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
-        <div class="container">
+        <div class="container center text-center">
+            <h2 class="display-3">Photo Gallery</h2>
+            <hr class="small">
             <div class="row center">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Photo Gallery</h2>
-                    <hr class="small">
-                    <div class="row center" style="background-color:white; text-align: center">
-                        <div class="col-sm-3" ng-repeat="item in portfolio track by $index">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="{{item.src}}" style="height: 30vh;">
-                                </a>
-                            </div>
-                        </div>
+                <div class="col-sm-3" ng-repeat="item in portfolio track by $index">
+                    <div class="portfolio-item">
+                        <a href="#">
+                            <img class="img-portfolio img-responsive" src="{{item.src}}" style="height: 30vh;">
+                        </a>
                     </div>
-                    <!-- /.row (nested) -->
-                    <button class="btn btn-dark" ng-click="showMore()" ng-hide="isShowingMore">View More Items</button>
-                    <button class="btn btn-dark" ng-click="showLess()" ng-hide="!isShowingMore">View Fewer Items</button>
                 </div>
-                <!-- /.col-lg-10 -->
             </div>
-            <!-- /.row -->
+            <!-- /.row (nested) -->
+            <button class="btn btn-dark" ng-click="showMore()" ng-hide="isShowingMore">View More Items</button>
+            <button class="btn btn-dark" ng-click="showLess()" ng-hide="!isShowingMore">View Fewer Items</button>
         </div>
         <!-- /.container -->
     </section>
@@ -208,7 +202,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1 style="">Help our Team Achieve New Heights!</h1>
+                    <h2 class="display-3">Help our Team Achieve New Heights!</h2>
+                    <hr class="small">
                     <a href="#sponsor" class="btn btn-lg btn-light" ng-click="showSponsorPitch()">Sponsor Us!</a>
                     <a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=2&source=EDZ" class="btn btn-lg btn-dark">Donate!</a>
                     <a href="#sponsor" class="btn btn-lg btn-light" ng-click="showMailingList()">Follow Us!</a>
@@ -216,24 +211,24 @@
             </div>
         </div>
         <div class="spacer" style="height: 0px;"></div>
-
-        <div style="color: white" id="mailing-list" class="text-center" ng-show="isShowingMailingList">
+        <!-- What does the above line do??? -->
+        <div id="mailing-list" class="text-center" ng-show="isShowingMailingList">
             <h2>Join our Mailing List!</h2>
-            <form style="color:white; font-size:18px; font-family:Raleway;">
-                Name:<br>
-                <input style="color:black; font-family:Raleway;" id="mailing-list-name" type="text" name="firstname" placeholder="John Doe"><br><br>
-                Email:<br>
-                <input style="color:black; font-family:Raleway;" id="mailing-list-email" type="text" placeholder="john@doe.com" name="lastname">
+            <form>
+                <p>Name:</p>
+                <input id="mailing-list-name" type="text" name="firstname" placeholder="John Doe"><br><br>
+                <p>Email:</p>
+                <input id="mailing-list-email" type="text" placeholder="john@doe.com" name="lastname">
             </form>
             <br>
-            <button type="submit" style="color: black;" onclick="writeNewEmail()" class="btn btn-lg btn-light"> Sign me up! </button>
+            <button type="submit" onclick="writeNewEmail()" class="btn btn-lg btn-light"> Sign me up! </button>
         </div>
         <div ng-show="isShowingSponsorPitch">
             <div class="container">
                 <div class="row">
                     <div class="text-center">
                         <h1 style="font-family:Raleway;">Become one of our sponsors today!</h1>
-                        <p class="lead">Contact <a href="mailto:uwhpsub@gmail.com" style="color:white; text-decoration:underline;">uwhpsub@gmail.com</a> to learn more</p>
+                        <p class="lead">Contact <a href="mailto:uwhpsub@gmail.com" class="text-light">uwhpsub@gmail.com</a> to learn more</p>
                     </div>
                 </div>
             </div>
@@ -244,24 +239,22 @@
     </section>
 
     <!-- Sponsors -->
-    <section id="sponsor" class="container" style="margin: 0px; width: 98vw; color: #337ab7; background:white;">
-        <div style="text-align: center; ">
-            <!-- <input type="text" name="sponsorName" ng-model="sponsorName"><br> -->
-            <h1 class="standout-text-light"> Huge Shoutout To Our Sponsors!</h1>
-            <h2 class="standout-text-light text-muted">We Couldn't Do It Without Your Support!</h2>
-            <div id="special" class="row" style="text-align:center; margin-top: 20px;">
-                <div ng-repeat="sponsor in importantSponsors track by $index" style="display:inline-block;" class="sponsor-logo">
-                    <img src="{{sponsor.img}}" ng-click="goTo(sponsor.link)" style="height:auto; padding:20px; width:19vw;">
-                </div>
-                <!-- <div ng-repeat="i2 in sponsor_array_2 track by $index" style="display:inline-block;" class="sponsor-logo">
-                    <img src="{{i2}}" height="150px" width="350px;" style="margin: 10px;">
-                </div> -->
+    <section id="sponsor" class="container text-center">
+        <!-- <input type="text" name="sponsorName" ng-model="sponsorName"><br> -->
+        <h2 class="display-3 standout-text-light"> Huge Shoutout To Our Sponsors!</h1>
+        <h3 class="display-4 standout-text-light">We Couldn't Do It Without Your Support!</h2>
+        <div id="special" class="row">
+            <div ng-repeat="sponsor in importantSponsors track by $index" style="display:inline-block;" class="sponsor-logo">
+                <img src="{{sponsor.img}}" ng-click="goTo(sponsor.link)" style="height:auto; padding:20px; width:19vw;">
             </div>
+            <!-- <div ng-repeat="i2 in sponsor_array_2 track by $index" style="display:inline-block;" class="sponsor-logo">
+                <img src="{{i2}}" height="150px" width="350px;" style="margin: 10px;">
+            </div> -->
         </div>
     </section>
 
     <!-- Footer -->
-    <footer style="color: white; background:#337ab7">
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center" >
@@ -269,23 +262,23 @@
                     <p>Mechanical Engineering Department,
                         <br>Seattle, Washington, 98105</p>
                         <ul class="list-unstyled">
-                            <li><i class="fa fa-envelope-o fa-fw" ></i> <a href="mailto:uwhpsub@gmail.com"style="color: white;">uwhpsub@gmail.com</a>
+                            <li><i class="fa fa-envelope-o fa-fw" ></i> <a href="mailto:uwhpsub@gmail.com">uwhpsub@gmail.com</a>
                             </li>
                         </ul>
                         <br>
                         <ul class="list-inline">
                             <li>
-                                <a href="https://www.facebook.com/uwhps/" style="color: white;"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                                <a href="https://www.facebook.com/uwhps/"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/uwhps/" style="color: white;"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+                                <a href="https://www.instagram.com/uwhps/"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/user/UWHPSub" style="color: white;"><i class="fa fa-youtube fa-fw fa-3x"></i></a>
+                                <a href="https://www.youtube.com/user/UWHPSub"><i class="fa fa-youtube fa-fw fa-3x"></i></a>
                             </li>
                         </ul>
                         <hr class="small">
-                        <p class="text-muted" style="color: white;">Created By: Varun Viswanath 2016</p>
+                        <p>Created By: Varun Viswanath 2016</p>
                     </div>
                 </div>
             </div>
