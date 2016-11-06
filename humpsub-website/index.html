@@ -95,6 +95,7 @@
     <section id="about" class="about">
         <div class="container text-center">
             <h1 class="display-2">Who are we?</h1>
+            <hr class="small">
             <!-- <p class="lead">We are engineers. We are designers. <br> We are machinists, coders, athletes, and divers.<br> </p> -->
             <div class="spacer" style="height: 5.0vh;"></div>
             <p class="lead">We are a community of driven students from across the University of Washington who believe that everyone is capable of impactful and original work.</p>
@@ -111,26 +112,23 @@
         <!-- /.container -->
     </section>
 
-    <!-- Services -->
+    <!-- Services (aka How It All Comes Together) -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <section id="services" class="services bg-primary">
         <div class="container text-center">
             <h1 class="display-2">How It All Comes Together</h1>
             <hr class="small">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="subteam in teamInfo track by $index">
-                    <div class="service-item" style="margin-bottom:15px; margin-top:3.0vh;">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="{{subteam.glyph}}"></i>
-                        </span>
-                        <p class="display-5">
-                            {{subteam.name}}
-                        </p>
-                        <a href="#panel" class="btn btn-sm btn-light" ng-click="showTheseDetails($index)">Learn More</a>
-                    </div>
+                <div class="service-item col-xs-12 col-sm-6 col-md-4" ng-repeat="subteam in teamInfo track by $index">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="{{subteam.glyph}}"></i>
+                    </span>
+                    <p class="display-5">
+                        {{subteam.name}}
+                    </p>
+                    <a href="#panel" class="btn btn-sm btn-light" ng-click="showTheseDetails($index)">Learn More</a>
                 </div>
-
             </div>
             <!-- /.row -->
             <a href="#team-roster" id="about-next-button">
@@ -146,11 +144,11 @@
         <div class="container">
             <h2 class="display-3 text-center">{{infopanelTitle}}</h2>
             <div class="row">
-              <div class="col-sm-12 col-md-4">
-                  <img src="{{infopanelImage}}" class="" style="height: 180px; width: auto; margin: 0 20px;">
+              <div class="col-xs-12 col-sm-5">
+                  <img src="{{infopanelImage}}" class="" width="100%">
               </div>
-              <div class="col-sm-12 col-md-8">
-                  <p class="display-5">{{infopanelDetails}}</p>
+              <div class="col-xs-12 col-sm-7">
+                  <p class="display-5 text-vertical-center">{{infopanelDetails}}</p>
               </div>
             </div>
         </div>
@@ -158,7 +156,7 @@
 
     <!-- Team Roster -->
     <section id="team-roster" class="callout">
-        <button class="btn btn-dark btn-lg" style="margin-left:20px; margin-top: 20px; position:absolute;"
+        <button class="back-btn btn btn-dark btn-lg"
         ng-show="is_showing_members" ng-click="reset()">Back</button>
         <div class="text-vertical-center text-center">
             <h1>{{title}}</h1>
@@ -166,13 +164,11 @@
             <ul id="roster" class="col-md-8 col-md-offset-2">
                 <li class="roster-subsection"
                 ng-repeat="object in display track by $index"
-                ng-click="showSubteam($index, object)"
-                style="margin: 10px 0px;">{{object.name}}
+                ng-click="showSubteam($index, object)">
+                    {{object.name}}
                 </li>
             </ul>
             <div class="spacer" style="height: 10px;"></div>
-
-
         </div>
 <!--
         <a href="#portfolio" id="about-next-button" style="position: absolute; bottom: 0;">
@@ -187,7 +183,7 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h2>Photo Gallery</h2>
                     <hr class="small">
-                    <div class="row center " style="background-color:white; text-align: center">
+                    <div class="row center" style="background-color:white; text-align: center">
                         <div class="col-sm-3" ng-repeat="item in portfolio track by $index">
                             <div class="portfolio-item">
                                 <a href="#">

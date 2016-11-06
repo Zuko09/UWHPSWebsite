@@ -56,6 +56,26 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: 400;
 }
 
+/* Services */
+
+.service-item {
+	margin-bottom: 25px;
+}
+
+/* Team Roster */
+
+.back-btn {
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.roster-subsection {
+	margin: 20px 0;
+}
+
+/* Unclassified */
+
 /* Style the buttons that are used to open and close the accordion panel */
 
 .sidebar-nav > .sidebar-brand a {
@@ -111,14 +131,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 hr.line {
-	display: block;
-	position: relative;
-	width: 50%;
-	height: 0;
-	margin: 25px 25% -20px;
-	padding: 50px 0 0 0;
-    border-top: 1px white solid;
-	color: white;
+	max-width: 50%;
 }
 
 #roster-title {
