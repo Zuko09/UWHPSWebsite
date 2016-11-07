@@ -19,6 +19,7 @@ The sections our website includes are:
 ## Overall:
   - Make Images Load Faster
   - Make Font Sizes change dynamically with window size
+  - Add SubTeam logo to the Header
 
 ## Header:
   - Nothing Its Perfect, Varun Made It
