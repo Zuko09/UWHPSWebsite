@@ -70,19 +70,33 @@ public class Varun {
   private bool willHelp;
   
   public void Varun(Object coffee){
+  
     this.missesWritingCode = true; // Only a little bit
+  
     this.isWillingToDelegate = true;
+    
     this.believesInYou = true; // http://2.bp.blogspot.com/_EHXWr9fDj_E/SxF4y5TDsdI/AAAAAAAAABo/g8donmFsNcA/s1600/GaisNiceGuyPose.jpg
+    
     this.willHelp = null;
     
+    
     if(coffee == 'Americano') {
+    
       this.willHelp = true;
+      
     }
+    
   }
   
+  
   public String get(String seriesOfWords) {
+  
     String email = varunknath@gmail.com;
+    
     return "Please send an email to " + email + " including " + seriesOfWords + " as your message, and Varun will respond as soon as possible!";
+    
   }
+  
 }
+
   
