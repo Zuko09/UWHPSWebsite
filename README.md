@@ -64,10 +64,15 @@ The sections our website includes are:
   
   
 public class Varun {
+
   private bool missesWritingCode;
+  
   private bool isWillingToDelegate;
+  
   private bool believesInYou;
+  
   private bool willHelp;
+  
   
   public void Varun(Object coffee){
   
