@@ -131,7 +131,7 @@
             if($scope.is_showing_members == false) {
                 $scope.showTheseDetails(index);
             } else {
-                $window.location.href = member.link;
+                window.open(member.link);
             }
         };
         $scope.showThisSubteam = function(index) {
