@@ -235,7 +235,7 @@
             {src : "img/portfolio/portfolio-13.jpg"},
             {src : "img/portfolio/portfolio-14.jpg"}
         ];
-        $scope.initialPortfolioSize = 8;
+        $scope.initialPortfolioSize = 6;
         $scope.portfolio = new Array();
         $scope.initializePortfolio = function() {
             $scope.portfolio = [];

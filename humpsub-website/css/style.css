@@ -102,6 +102,30 @@ input {
     color: #e5c100;
 }
 
+/* Portfolio */
+
+/* References:
+ * https://medium.com/@chrisnager/center-and-crop-images-with-a-single-line-of-css-ad140d5b4a87#.9fpdzyttz
+ * http://stackoverflow.com/a/12925343/2438757
+ */
+
+.portfolio-item {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding-bottom: 50%;
+    height: 0;
+}
+
+.img-portfolio {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
 /* Footer */
 
 footer {
