@@ -11,17 +11,18 @@
 
     <title>UW Human Powered Sub Team</title>
 
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,800,700,900' rel='stylesheet' type='text/css'>
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/css" href="css/navbar.css"/> -->
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900' rel='stylesheet' type='text/css'>
 
     <!-- AngularJS -->
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> -->
@@ -81,10 +82,10 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h2 class="standout-text-dark" style="font-weight:500">Mechanical Engineering</h2>
-            <h3 class="standout-text-dark" style="font-weight:500">University of Washington</h3>
+            <h2 class="standout-text-dark display-3 bold">Mechanical Engineering</h2>
+            <h3 class="standout-text-dark display-4 bold">University of Washington</h3>
             <div class="spacer" style="height: 20px"></div>
-            <h1 class="standout-text-dark">Human Powered Submarine Team</h1>
+            <h1 class="standout-text-dark display-1 semibold">Human Powered Submarine Team</h1>
             <br>
             <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
         </div>
@@ -92,172 +93,142 @@
 
     <!-- About -->
     <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1 style="font-family:Raleway; font-size:50px; margin:0px;">Who are we?</h1>
-                        <!-- <p class="lead">We are engineers. We are designers. <br> We are machinists, coders, athletes, and divers.<br> </p> -->
-                        <div id="spacer" style="height: 5.0vh;"></div>
-                        <p class="lead">We are a community of driven students from across the University of Washington <br> who believe that everyone is capable of impactful and original work.<br> </p>
+        <div class="container text-center">
+            <h1 class="display-2">Who are we?</h1>
+            <hr class="small">
+            <!-- <p class="lead">We are engineers. We are designers. <br> We are machinists, coders, athletes, and divers.<br> </p> -->
+            <div class="spacer" style="height: 5.0vh;"></div>
+            <p class="lead">We are a community of driven students from across the University of Washington who believe that everyone is capable of impactful and original work.</p>
+            <div class="spacer" style="height: 2.0vh;"></div>
+            <p class="lead">Every year, we come together to share our passion with others, and build the fastest human powered submarine in the world.</p>
+            <div class="spacer" style="height: 1.5vh;"></div>
+            <h2 class="display-4">Welcome, to UW Human Powered Sub.</h2>
 
-                        <div id="spacer" style="height: 2.0vh;"></div>
-                        <p class="lead">Every year, we come together to share our passion with others,<br>and build the fastest human powered submarine in the world.</p>
-
-                        <div id="spacer" style="height: 1.5vh;"></div>
-
-                        <p class="lead" style="font-size: 35px;">Welcome, to UW Human Powered Sub.</p>
-                        <img src="img/hps-logo.jpg" style="height: auto; width: 128px;">
-
-                        <div id="spacer" style="height:5px;"></div>
-
-                        <a href="#services" id="about-next-button"><i class="fa fa-angle-down fa-5x" style="color:#333;"></i></a>
-                        <!-- <div id="spacer" style="height: 30px;"></div> -->
-
-                    </div>
-
-                </div>
-                <!-- /.col-lg-12  -->
-            </div>
-            <!-- /.row -->
+            <img src="img/hps-logo.jpg" height="auto" width="128px">
+            <div class="spacer" style="height:5px;"></div>
+            <a href="#services" id="about-next-button"><i class="fa fa-angle-down fa-5x" style="color:#333;"></i></a>
+            <!-- <div class="spacer" style="height: 30px;"></div> -->
         </div>
         <!-- /.container -->
     </section>
 
-    <!-- Services -->
+    <!-- Services (aka How It All Comes Together) -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary" style="font-family:Raleway; padding-top:30px; ">
-        <div class="container">
-            <div class="row text-center" style:"margin:0px">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>How It All Comes Together</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-xs-6 col-sm-6 col-md-4" ng-repeat="subteam in teamInfo track by $index">
-                            <div class="service-item" style="margin-bottom:15px; margin-top:3.0vh;">
-                                <span class="fa-stack fa-4x">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="{{subteam.glyph}}"></i>
-                                </span>
-                                <h4 style="font-size:26px;">
-                                    {{subteam.name}}
-                                </h4>
-                                <a href="#panel" class="btn btn-sm btn-light" ng-click="showTheseDetails($index)">Learn More</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- /.row (nested) -->
-                    <a href="#team-roster" id="about-next-button">
-                        <i class="fa fa-angle-down fa-5x" style="color:#ffffff; opacity:0.9"></i>
-                    </a>
+    <section id="services" class="services bg-primary">
+        <div class="container text-center">
+            <h1 class="display-2">How It All Comes Together</h1>
+            <hr class="small">
+            <div class="row">
+                <div class="service-item col-xs-12 col-sm-6 col-md-4" ng-repeat="subteam in teamInfo track by $index">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="{{subteam.glyph}}"></i>
+                    </span>
+                    <p class="display-5">
+                        {{subteam.name}}
+                    </p>
+                    <a href="#panel" class="btn btn-sm btn-light" ng-click="showTheseDetails($index)">Learn More</a>
                 </div>
-                <!-- /.col-lg-10 -->
             </div>
             <!-- /.row -->
+            <a href="#team-roster" id="about-next-button">
+                <i class="fa fa-angle-down fa-5x" style="color:#ffffff; opacity:0.9"></i>
+            </a>
         </div>
         <!-- /.container -->
         </div>
     </section>
 
-    <div id="panel" class="infopanel" ng-show="showDetails" style="height: 45vh;">
+    <!-- Random Pop-up Info Panel -->
+    <section id="panel" class="infopanel" ng-show="showDetails">
         <div class="container">
-            <h1 style="font-size:4.5em; font-weight:700;">{{infopanelTitle}}</h1>
+            <h2 class="display-3 text-center">{{infopanelTitle}}</h2>
             <div class="row">
-              <div class="col-sm-4">
-                  <img src="{{infopanelImage}}" class="" style="height: 180px; width: auto; margin: 0 20px;">
+              <div class="col-xs-12 col-sm-5">
+                  <img src="{{infopanelImage}}" class="" width="100%">
               </div>
-              <div class="col-sm-8">
-                  <h3>{{infopanelDetails}}</h3>
+              <div class="col-xs-12 col-sm-7">
+                  <p class="display-5 text-vertical-center">{{infopanelDetails}}</p>
               </div>
             </div>
-
         </div>
-    </div>
+    </section>
 
-    <!-- roster -->
-    <div id="team-roster" class="callout" style="height: 55vh; position:relative;">
-        <p class="btn btn-dark btn-lg" style="margin-left:20px; margin-top: 20px; position:absolute;"
-        ng-show="is_showing_members" ng-click="reset()">Back</p>
-        <div class="text-vertical-center" style="text-align: center; padding-top:20px; ">
+    <!-- Team Roster -->
+    <section id="team-roster" class="callout">
+        <button class="back-btn btn btn-dark btn-lg"
+        ng-show="is_showing_members" ng-click="reset()">Back</button>
+        <div class="text-vertical-center text-center">
             <h1>{{title}}</h1>
-            <svg height="10" width="100%">
-                <line x1="25%" y1="5" x2="75%" y2="5" class="svg-line"/>
-            </svg>
+            <hr class="line">
             <ul id="roster" class="col-md-8 col-md-offset-2">
                 <li class="roster-subsection"
                 ng-repeat="object in display track by $index"
-                ng-click="showSubteam($index, object)"
-                style="margin: 10px 0px;">{{object.name}}
+                ng-click="showSubteam($index, object)">
+                    {{object.name}}
                 </li>
             </ul>
-            <div id="spacer" style="height: 10px;"></div>
-
-
+            <div class="spacer" style="height: 10px;"></div>
         </div>
 <!--
         <a href="#portfolio" id="about-next-button" style="position: absolute; bottom: 0;">
             <i class="fa fa-angle-down fa-5x" style="color:#ffffff; opacity:0.9"></i>
         </a> -->
-    </div>
+    </section>
 
-    <!-- Portfolio -->
+    <!-- Photo Gallery / Portfolio -->
     <section id="portfolio" class="portfolio">
-        <div class="container">
+        <div class="container center text-center">
+            <h2 class="display-3">Photo Gallery</h2>
+            <hr class="small">
             <div class="row center">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Photo Gallery</h2>
-                    <hr class="small">
-                    <div class="row center " style="background-color:white; text-align: center">
-                        <div class="col-sm-3" ng-repeat="item in portfolio track by $index">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="{{item.src}}" style="height: 30vh;">
-                                </a>
-                            </div>
-                        </div>
+                <div class="col-sm-4" ng-repeat="item in portfolio track by $index">
+                    <div class="portfolio-item">
+                        <a href="javascript:(0);">
+                            <img class="img-portfolio img-responsive" src="{{item.src}}">
+                        </a>
                     </div>
-                    <!-- /.row (nested) -->
-                    <button class="btn btn-dark" ng-click="showMore()" ng-hide="isShowingMore">View More Items</button>
-                    <button class="btn btn-dark" ng-click="showLess()" ng-hide="!isShowingMore">View Fewer Items</button>
                 </div>
-                <!-- /.col-lg-10 -->
             </div>
-            <!-- /.row -->
+            <!-- /.row (nested) -->
+            <button class="btn btn-dark" ng-click="showMore()" ng-hide="isShowingMore">View More Items</button>
+            <button class="btn btn-dark" ng-click="showLess()" ng-hide="!isShowingMore">View Fewer Items</button>
         </div>
         <!-- /.container -->
     </section>
 
     <!-- Call to Action -->
-    <div id="sponsor" class="call-to-action bg-primary" >
+    <section id="call-to-action" class="call-to-action bg-primary" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1 style="">Help our Team Achieve New Heights!</h1>
+                    <h2 class="display-3">Help our Team Achieve New Heights!</h2>
+                    <hr class="small">
                     <a href="#sponsor" class="btn btn-lg btn-light" ng-click="showSponsorPitch()">Sponsor Us!</a>
                     <a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=2&source=EDZ" class="btn btn-lg btn-dark">Donate!</a>
                     <a href="#sponsor" class="btn btn-lg btn-light" ng-click="showMailingList()">Follow Us!</a>
                 </div>
             </div>
         </div>
-        <div id="spacer" style="height: 0px;"></div>
-
-        <div style="color: white" id="mailing-list" class="text-center" ng-show="isShowingMailingList">
+        <div class="spacer" style="height: 0px;"></div>
+        <!-- What does the above line do??? -->
+        <div id="mailing-list" class="text-center" ng-show="isShowingMailingList">
             <h2>Join our Mailing List!</h2>
-            <form style="color:white; font-size:18px; font-family:Raleway;">
-                Name:<br>
-                <input style="color:black; font-family:Raleway;" id="mailing-list-name" type="text" name="firstname" placeholder="John Doe"><br><br>
-                Email:<br>
-                <input style="color:black; font-family:Raleway;" id="mailing-list-email" type="text" placeholder="john@doe.com" name="lastname">
+            <form>
+                <p>Name:</p>
+                <input id="mailing-list-name" type="text" name="firstname" placeholder="John Doe"><br><br>
+                <p>Email:</p>
+                <input id="mailing-list-email" type="text" placeholder="john@doe.com" name="lastname">
             </form>
             <br>
-            <button type="submit" style="color: black;" onclick="writeNewEmail()" class="btn btn-lg btn-light"> Sign me up! </button>
+            <button type="submit" onclick="writeNewEmail()" class="btn btn-lg btn-light"> Sign me up! </button>
         </div>
         <div ng-show="isShowingSponsorPitch">
             <div class="container">
                 <div class="row">
                     <div class="text-center">
                         <h1 style="font-family:Raleway;">Become one of our sponsors today!</h1>
-                        <p class="lead">Contact <a href="mailto:uwhpsub@gmail.com" style="color:white; text-decoration:underline;">uwhpsub@gmail.com</a> to learn more</p>
+                        <p class="lead">Contact <a href="mailto:uwhpsub@gmail.com" class="text-light">uwhpsub@gmail.com</a> to learn more</p>
                     </div>
                 </div>
             </div>
@@ -265,26 +236,25 @@
         <!-- <a href="#portfolio" id="about-next-button">
             <i class="fa fa-angle-down fa-5x" style="color:#ffffff; opacity:0.9"></i>
         </a> -->
-    </div>
+    </section>
 
     <!-- Sponsors -->
-    <div class="container" style="margin: 0px; width: 100vw; color: #337ab7; background:white;">
-        <div style="text-align: center; ">
-            <!-- <input type="text" name="sponsorName" ng-model="sponsorName"><br> -->
-            <h1 style="font-weight:700; font-family: Raleway; font-size: 50px; color: black; opacity: 0.9; text-shadow: 1px 3px 2px rgba(0,0,0,0.3);"> Huge Shoutout To Our Sponsors!<br>We Couldn't Do It Without Your Support!</h1>
-            <div id="special" class="row" style="text-align:center; margin-top: 20px;">
-                <div ng-repeat="sponsor in importantSponsors track by $index" style="display:inline-block;" class="sponsor-logo">
-                    <img src="{{sponsor.img}}" ng-click="goTo(sponsor.link)" style="height:auto; padding:20px; width:19vw;">
-                </div>
-                <!-- <div ng-repeat="i2 in sponsor_array_2 track by $index" style="display:inline-block;" class="sponsor-logo">
-                    <img src="{{i2}}" height="150px" width="350px;" style="margin: 10px;">
-                </div> -->
+    <section id="sponsor" class="container text-center">
+        <!-- <input type="text" name="sponsorName" ng-model="sponsorName"><br> -->
+        <h2 class="display-3 standout-text-light"> Huge Shoutout To Our Sponsors!</h1>
+        <h3 class="display-4 standout-text-light">We Couldn't Do It Without Your Support!</h2>
+        <div id="special" class="row">
+            <div ng-repeat="sponsor in importantSponsors track by $index" style="display:inline-block;" class="sponsor-logo">
+                <img src="{{sponsor.img}}" ng-click="goTo(sponsor.link)" style="height:auto; padding:20px; width:19vw;">
             </div>
+            <!-- <div ng-repeat="i2 in sponsor_array_2 track by $index" style="display:inline-block;" class="sponsor-logo">
+                <img src="{{i2}}" height="150px" width="350px;" style="margin: 10px;">
+            </div> -->
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
-    <footer style="color: white; background:#337ab7">
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center" >
@@ -292,23 +262,23 @@
                     <p>Mechanical Engineering Department,
                         <br>Seattle, Washington, 98105</p>
                         <ul class="list-unstyled">
-                            <li><i class="fa fa-envelope-o fa-fw" ></i> <a href="mailto:uwhpsub@gmail.com"style="color: white;">uwhpsub@gmail.com</a>
+                            <li><i class="fa fa-envelope-o fa-fw" ></i> <a href="mailto:uwhpsub@gmail.com">uwhpsub@gmail.com</a>
                             </li>
                         </ul>
                         <br>
                         <ul class="list-inline">
                             <li>
-                                <a href="https://www.facebook.com/uwhps/" style="color: white;"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                                <a href="https://www.facebook.com/uwhps/"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/uwhps/" style="color: white;"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+                                <a href="https://www.instagram.com/uwhps/"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/user/UWHPSub" style="color: white;"><i class="fa fa-youtube fa-fw fa-3x"></i></a>
+                                <a href="https://www.youtube.com/user/UWHPSub"><i class="fa fa-youtube fa-fw fa-3x"></i></a>
                             </li>
                         </ul>
                         <hr class="small">
-                        <p class="text-muted" style="color: white;">Created By: Varun Viswanath 2016</p>
+                        <p>Created By: Varun Viswanath 2016</p>
                     </div>
                 </div>
             </div>

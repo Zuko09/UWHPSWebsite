@@ -1,0 +1,206 @@
+/* Custom Styles */
+
+/* Broad Defines */
+
+body > section {
+	padding: 50px 0;
+}
+
+.full {
+    height: 100vh;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Raleway";
+}
+
+p {
+	font-size: 18px;
+}
+
+input {
+	color: #000;
+}
+
+/* For the following, see https://css-tricks.com/when-using-important-is-the-right-choice/ */
+
+.semibold {
+	font-weight: 500 !important;
+}
+
+.bold {
+	font-weight: 700 !important;
+}
+
+/* Header */
+
+.header {
+	background-image: url(../img/purple_seattle.jpg);
+	background-attachment: fixed;
+}
+
+.text-vertical-center h1 {
+	font-weight: inherit;
+}
+
+.display-1 {
+	font-size: 6rem;
+	font-weight: 300;
+}
+.display-2 {
+	font-size: 5.5rem;
+	font-weight: 300;
+}
+.display-3 {
+	font-size: 4.5rem;
+	font-weight: 300;
+}
+.display-4 {
+	font-size: 3.5rem;
+	font-weight: 300;
+}
+.display-5 {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+/* Services */
+
+.service-item {
+	margin-bottom: 25px;
+}
+
+/* Team Roster */
+
+.back-btn {
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#roster-title {
+    color: #111;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 64px;
+	font-weight: 700;
+    line-height: 64px;
+    margin: 0 0 0;
+    padding: 20px 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.roster-subsection {
+    width: 20vw;
+    font-size: 30px;
+    display: inline-block;
+    margin: 10px;
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+}
+
+.roster-subsection:hover {
+    color: #e5c100;
+}
+
+/* Portfolio */
+
+/* References:
+ * https://medium.com/@chrisnager/center-and-crop-images-with-a-single-line-of-css-ad140d5b4a87#.9fpdzyttz
+ * http://stackoverflow.com/a/12925343/2438757
+ */
+
+.portfolio-item {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding-bottom: 50%;
+    height: 0;
+}
+
+.img-portfolio {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+/* Footer */
+
+footer {
+	color: #fff;
+	background:#337ab7;
+}
+
+footer a {
+	color: #fff;
+}
+
+/* Unclassified */
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.sidebar-nav > .sidebar-brand a {
+    color: #fff;
+}
+
+#about-next-button:hover {
+    opacity: 0.3;
+}
+
+#special > div > img {
+    margin: 30px;
+}
+
+#special > div:hover {
+    outline: 2px solid #337ab7;
+}
+
+.sponsor-logo {
+    display:block;
+    max-height:35vh;
+    height:35vh;
+    height: auto;
+    width:auto;
+    margin: 10px;
+
+}
+
+.sponsor-logo > img {
+    height: 35vh;
+    width: 35vh;
+}
+
+.standout-text-dark {
+    color: #fff;
+    text-shadow: 3px 5px 4px rgba(0,0,0,0.6);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.standout-text-light {
+	color: #000;
+	text-shadow: 1px 3px 2px rgba(0,0,0,0.3);
+}
+
+.colored-text {
+    color: #337ab7;
+}
+
+hr.line {
+	max-width: 50%;
+}
+
+.lead {
+    font-family: Raleway;
+    font-size: 24px;
+    line-height: 45px;
+}
+
+.text-vertical-top {
+	display: table-cell;
+	text-align: center;
+	vertical-align: top;
+	left: 0;
+}

@@ -1,125 +1,11 @@
 /*!
-* Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
-* Copyright 2013-2016 Start Bootstrap
-* Licensed under MIT (https://github.com/BlackrockDigital/sta2rtbootstrap/blob/gh-pages/LICENSE)
-*/
-
-/* Custom Styles */
-
-/* Style the buttons that are used to open and close the accordion panel */
-
-#about-next-button:hover {
-    opacity: 0.3;
-}
-
-#special > div > img {
-    margin: 30px;
-}
-
-#special > div:hover {
-    outline: 2px solid #337ab7;
-}
-
-.infopanel {
-    text-align: center;
-}
-
-.full {
-    height: 100vh;
-}
-
-.sponsor-logo {
-    display:block;
-    max-height:35vh;
-    height:35vh;
-    height: auto;
-    width:auto;
-    margin: 10px;
-
-}
-
-.sponsor-logo > img {
-    height: 35vh;
-    width: 35vh;
-}
-.standout-text-dark {
-    color: white;
-    text-shadow: 3px 5px 4px rgba(0,0,0,0.6);
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-family: Raleway;
-}
-
-.colored-text {
-    color: #337ab7
-}
-
-.svg-line {
-    stroke: white;
-    stroke-width: 1;
-}
-
-.line {
-    color: white;
-    border-color: white;
-    border-top: 1px solid;
-    display: block;
-    margin-left: 25%;
-    width: 50%;
-    margin-top: 25px;
-    padding-top: 50px;
-    position: relative;
-}
-
-#roster-title {
-    color: #111;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 64px; font-weight: 700;
-    line-height: 64px;
-    margin: 0 0 0;
-    padding: 20px 30px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-#roster {
-    text-align: center;
-
-}
-
-.roster-subsection {
-    width: 20vw;
-    font-size: 30px;
-    display: inline-block;
-    /*margin: 10px;
-    background-color: rgba(0, 0, 0, 0.3);;*/
-}
-
-.roster-subsection:hover {
-    color: #e5c100
-}
-
-.text-vertical-top {
-    display: table-cell;
-    text-align: center;
-    vertical-align: top;
-    left: 0;
-}
-
-.text-vertical-top h1 {
-    margin-top: 20px;
-    padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
-}
-
-.lead {
-    font-family: Raleway;
-    font-size: 24px;
-    line-height: 45px;
-}
+ * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
 
 /* Global Styles */
+
 html,
 body {
     width: 100%;
@@ -207,7 +93,6 @@ hr.small {
 .sidebar-nav li {
     text-indent: 20px;
     line-height: 40px;
-    color: white;
 }
 
 .sidebar-nav li a {
@@ -231,15 +116,14 @@ hr.small {
     height: 55px;
     font-size: 18px;
     line-height: 55px;
-    color: white;
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: white;
+    color: #999;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-    color: white;
+    color: #fff;
     background: none;
 }
 
@@ -282,6 +166,7 @@ hr.small {
 
 .about {
     padding: 50px 0;
+    word-spacing: .3em;
 }
 
 /* Services */
@@ -359,8 +244,8 @@ footer {
 }
 
 #to-top {
-    display: none;
-    position: fixed;
-    bottom: 5px;
-    right: 5px;
+	display: none;
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
 }
