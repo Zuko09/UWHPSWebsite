@@ -131,7 +131,7 @@
             if($scope.is_showing_members == false) {
                 $scope.showTheseDetails(index);
             } else {
-                window.open(member.link);
+                $window.location.href = member.link;
             }
         };
         $scope.showThisSubteam = function(index) {
@@ -235,7 +235,7 @@
             {src : "img/portfolio/portfolio-13.jpg"},
             {src : "img/portfolio/portfolio-14.jpg"}
         ];
-        $scope.initialPortfolioSize = 6;
+        $scope.initialPortfolioSize = 8;
         $scope.portfolio = new Array();
         $scope.initializePortfolio = function() {
             $scope.portfolio = [];
