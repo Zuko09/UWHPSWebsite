@@ -238,21 +238,18 @@
         </a> -->
     </section>
 
-    <!-- Sponsors -->
-    <section id="sponsor" class="container text-center">
-        <!-- <input type="text" name="sponsorName" ng-model="sponsorName"><br> -->
+    <!-- "Spnsrs" -->
+    <section id="spnsr" class="container text-center">
+        <!-- <input type="text" name="SpnsrName" ng-model="SpnsrName"><br> -->
         <h2 class="display-3 standout-text-light"> Huge Shoutout To Our Sponsors!</h1>
         <h3 class="display-4 standout-text-light">We Couldn't Do It Without Your Support!</h2>
         <div id="special" class="row">
-            <div ng-repeat="sponsor in sponsorArr track by $index" class="sponsor-logo">
-                <a href="{{sponsor.link}}">
-                    <img src="{{sponsorLogosDir}}{{sponsor.imgSrc}}" alt="{{sponsor.name}}">
-                    <div class="">{{sponsor.name}}</div>
+            <div ng-repeat="spnsr in spnsrArr track by $index" class="spnsr-logo">
+                <a href="{{spnsr.link}}">
+                    <img src="{{spnsrLogosDir}}{{spnsr.imgSrc}}" alt="{{spnsr.name}}">
+                    <div class="">{{spnsr.name}}</div>
                 </a>
             </div>
-            <!-- <div ng-repeat="i2 in sponsor_array_2 track by $index" style="display:inline-block;" class="sponsor-logo">
-                <img src="{{i2}}" height="150px" width="350px;" style="margin: 10px;">
-            </div> -->
         </div>
     </section>
 

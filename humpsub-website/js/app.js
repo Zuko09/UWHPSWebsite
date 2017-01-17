@@ -204,18 +204,18 @@
             $scope.showThisSubteam(i);
         }
 
-        $scope.isShowingSponsorPitch = false;
+        $scope.isShowingSpnsrPitch = false;
         $scope.isShowingMailingList = false;
 
         // three buttons
         $scope.showMailingList = function() {
-            $scope.isShowingSponsorPitch = false;
+            $scope.isShowingSpnsrPitch = false;
             $scope.isShowingMailingList = true;
         }
 
-        $scope.showSponsorPitch = function() {
+        $scope.showSpnsrPitch = function() {
             $scope.isShowingMailingList = false;
-            $scope.isShowingSponsorPitch = true;
+            $scope.isShowingSpnsrPitch = true;
 
         }
 
@@ -258,14 +258,14 @@
 
         // SPONSOR INFORMATION
 
-        $scope.sponsorName = "";
+        $scope.spnsrName = "";
 
-        $scope.searchSponsors = "";
+        $scope.searchspnsrs = "";
 
-        $scope.sponsorLogosDir = "img/hps-sponsors/blue-white-transparent/";
-        $scope.sponsorLogosHoverDir = "img/hps-sponsors/original-transparent/";
+        $scope.spnsrLogosDir = "img/hps-spnsrs/blue-white-transparent/";
+        $scope.spnsrLogosHoverDir = "img/hps-spnsrs/original-transparent/";
 
-        $scope.sponsorArr = [
+        $scope.spnsrArr = [
             {
                 name : "Fluke Corporation",
                 imgSrc: "fluke.png",
