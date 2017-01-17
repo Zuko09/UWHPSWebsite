@@ -158,18 +158,14 @@ footer a {
 }
 
 .sponsor-logo {
-    display:block;
-    max-height:35vh;
-    height:35vh;
-    height: auto;
-    width:auto;
+    display: inline-block;
     margin: 10px;
-
+	padding: 20px;
 }
 
-.sponsor-logo > img {
-    height: 35vh;
-    width: 35vh;
+.sponsor-logo img {
+    max-height: 35vh;
+    max-width: 35vh;
 }
 
 .standout-text-dark {

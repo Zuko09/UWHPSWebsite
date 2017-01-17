@@ -27,7 +27,7 @@
     <!-- AngularJS -->
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> -->
     <script src="js/angularjs.js"></script>
-    <script src="js/angular.js"></script>
+    <script src="js/app.js"></script>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -157,14 +157,14 @@
     <!-- Team Roster -->
     <section id="team-roster" class="callout">
         <button class="back-btn btn btn-dark btn-lg"
-        ng-show="is_showing_members" ng-click="reset()">Back</button>
+            ng-show="isShowingMembers" ng-click="reset()">Back</button>
         <div class="text-vertical-center text-center">
             <h1>{{title}}</h1>
             <hr class="line">
             <ul id="roster" class="col-md-8 col-md-offset-2">
                 <li class="roster-subsection"
-                ng-repeat="object in display track by $index"
-                ng-click="showSubteam($index, object)">
+                    ng-repeat="object in display track by $index"
+                    ng-click="showSubteam($index, object)">
                     {{object.name}}
                 </li>
             </ul>
@@ -244,8 +244,11 @@
         <h2 class="display-3 standout-text-light"> Huge Shoutout To Our Sponsors!</h1>
         <h3 class="display-4 standout-text-light">We Couldn't Do It Without Your Support!</h2>
         <div id="special" class="row">
-            <div ng-repeat="sponsor in importantSponsors track by $index" style="display:inline-block;" class="sponsor-logo">
-                <img src="{{sponsor.img}}" ng-click="goTo(sponsor.link)" style="height:auto; padding:20px; width:19vw;">
+            <div ng-repeat="sponsor in sponsorArr track by $index" class="sponsor-logo">
+                <a href="{{sponsor.link}}">
+                    <img src="{{sponsorLogosDir}}{{sponsor.imgSrc}}" alt="{{sponsor.name}}">
+                    <div class="">{{sponsor.name}}</div>
+                </a>
             </div>
             <!-- <div ng-repeat="i2 in sponsor_array_2 track by $index" style="display:inline-block;" class="sponsor-logo">
                 <img src="{{i2}}" height="150px" width="350px;" style="margin: 10px;">

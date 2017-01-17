@@ -1,10 +1,10 @@
 (function() {
-    'use strict';
+    "use strict";
 
-    angular.module('app1', [])
-    .controller('appController', appController);
+    angular.module("app1", [])
+    .controller("appController", appController);
 
-    appController.$inject = ['$scope', '$window'];
+    appController.$inject = ["$scope", "$window"];
     function appController($scope, $window) {
 
         // MISC DATA
@@ -13,105 +13,105 @@
         // ROSTER STUFF
         $scope.roster = [
             // {
-            //     name : 'Team Leads',
+            //     name : "Team Leads",
             //     members : [
-            //       {name : 'Connor Hughes', link: "www.linkedin.com/in/connor-hughes-43495b110"},
-            //       {name : 'Riley Harris', link: "https://www.linkedin.com/in/riley-harris-575297124"},
-            //       {name : 'Andrew Farrell', link: "https://www.linkedin.com/in/andrew-farrell-771a70100"},
-            //       {name : 'Jack Gentsch', link: "https://www.linkedin.com/in/jack-gentsch"},
-            //       {name : 'Ahrif McKee', link: "https://www.linkedin.com/in/ahrif-mckee-47a536129"},
-            //       {name : 'Riley Lyle', link: ""},
-            //       {name : 'Robert Karren', link: ""},
-            //       {name : 'Joseph Zacharin', link: "https://www.linkedin.com/in/joseph-zacharin-715064126"},
-            //       {name : 'Lucas Campbell', link: ""}
+            //       {name : "Connor Hughes", link: "www.linkedin.com/in/connor-hughes-43495b110"},
+            //       {name : "Riley Harris", link: "https://www.linkedin.com/in/riley-harris-575297124"},
+            //       {name : "Andrew Farrell", link: "https://www.linkedin.com/in/andrew-farrell-771a70100"},
+            //       {name : "Jack Gentsch", link: "https://www.linkedin.com/in/jack-gentsch"},
+            //       {name : "Ahrif McKee", link: "https://www.linkedin.com/in/ahrif-mckee-47a536129"},
+            //       {name : "Riley Lyle", link: ""},
+            //       {name : "Robert Karren", link: ""},
+            //       {name : "Joseph Zacharin", link: "https://www.linkedin.com/in/joseph-zacharin-715064126"},
+            //       {name : "Lucas Campbell", link: ""}
             //     ]
             // },
             {
-                name : 'Hull Team',
+                name : "Hull Team",
                 members : [
-                  {name : 'Riley Harris', link: "https://www.linkedin.com/in/riley-harris-575297124"},
-                  {name : 'Sharon Luo', link: "https://www.linkedin.com/in/sharon-luo"},
-                  {name : 'Robert Karren', link: ""},
-                  {name : 'Kyleah Hess', link: "https://www.linkedin.com/in/kyleahhess"},
-                  {name : 'Anna Schmitz', link: ""},
-                  {name : 'Sean Lam', link: ""}
+                  {name : "Riley Harris", link: "https://www.linkedin.com/in/riley-harris-575297124"},
+                  {name : "Sharon Luo", link: "https://www.linkedin.com/in/sharon-luo"},
+                  {name : "Robert Karren", link: ""},
+                  {name : "Kyleah Hess", link: "https://www.linkedin.com/in/kyleahhess"},
+                  {name : "Anna Schmitz", link: ""},
+                  {name : "Sean Lam", link: ""}
                 ]
             },
             {
-                name : 'Controls Team',
+                name : "Controls Team",
                 members : [
-                  {name : 'Andrew Farrell', link: "https://www.linkedin.com/in/andrew-farrell-771a70100"},
-                  {name : 'Harpreet	Singh', link: ""},
-                  {name : 'Nana	Yamagata', link: ""},
-                  {name : 'Thuy	Nguyen', link: ""},
-                  {name : 'Nikolas Johnson', link: ""},
-                  {name : 'Katherine Chun', link: "https://www.linkedin.com/in/chunkatherine"},
-                  {name : 'Joseph Zacharin', link: "https://www.linkedin.com/in/joseph-zacharin-715064126"},
-                  {name : 'Cassie Riel', link: "https://www.linkedin.com/in/cassie-riel-995650a2"},
-                  {name : 'Ashley Huynh', link: ""}
+                  {name : "Andrew Farrell", link: "https://www.linkedin.com/in/andrew-farrell-771a70100"},
+                  {name : "Harpreet	Singh", link: ""},
+                  {name : "Nana	Yamagata", link: ""},
+                  {name : "Thuy	Nguyen", link: ""},
+                  {name : "Nikolas Johnson", link: ""},
+                  {name : "Katherine Chun", link: "https://www.linkedin.com/in/chunkatherine"},
+                  {name : "Joseph Zacharin", link: "https://www.linkedin.com/in/joseph-zacharin-715064126"},
+                  {name : "Cassie Riel", link: "https://www.linkedin.com/in/cassie-riel-995650a2"},
+                  {name : "Ashley Huynh", link: ""}
                 ]
             },
             {
-                name : 'Electronics Team',
+                name : "Electronics Team",
                 members : [
-                  {name : 'Jack Gentsch', link: "https://www.linkedin.com/in/jack-gentsch"},
-                  {name : 'Joe Jimenez', link: ""},
-                  {name : 'Varun Viswanath', link: "https://www.linkedin.com/in/varun-viswanath-aab70345"},
-                  {name : 'Jack Mask', link: "https://www.linkedin.com/in/jmask"},
-                  {name : 'Brian Liu', link: ""},
-                  {name : 'Michael Essaf', link: ""},
-                  {name : 'Jocelyn Ma', link: ""},
-                  {name : 'Gabrielle Pang', link: ""},
-                  {name : 'Timmy Lee', link: ""},
-                  {name : 'Tremaine	Ng', link: "https://www.linkedin.com/in/trenng"},
-                  {name : 'Daniel Tran', link: "https://www.linkedin.com/in/daniel-tran-3716a4b9"}
+                  {name : "Jack Gentsch", link: "https://www.linkedin.com/in/jack-gentsch"},
+                  {name : "Joe Jimenez", link: ""},
+                  {name : "Varun Viswanath", link: "https://www.linkedin.com/in/varun-viswanath-aab70345"},
+                  {name : "Jack Mask", link: "https://www.linkedin.com/in/jmask"},
+                  {name : "Brian Liu", link: "https://www.linkedin.com/in/brian-liu"},
+                  {name : "Michael Essaf", link: ""},
+                  {name : "Jocelyn Ma", link: ""},
+                  {name : "Gabrielle Pang", link: ""},
+                  {name : "Timmy Lee", link: ""},
+                  {name : "Tremaine	Ng", link: "https://www.linkedin.com/in/trenng"},
+                  {name : "Daniel Tran", link: "https://www.linkedin.com/in/daniel-tran-3716a4b9"}
                 ]
             },
             {
-                name : 'Drivetrain Team',
+                name : "Drivetrain Team",
                 members : [
-                  {name : 'Ahrif McKee', link: "https://www.linkedin.com/in/ahrif-mckee-47a536129"},
-                  {name : 'Robert Reiten', link: ""},
-                  {name : 'Kanika Aggarwal', link: "https://www.linkedin.com/in/kanika-aggarwal-492304118"},
-                  {name : 'Zachary Tully', link: ""},
-                  {name : 'Brendan Greetham', link: "https://www.linkedin.com/in/brendan-greetham-796a9a111"},
-                  {name : 'Matt Kim', link: ""},
-                  {name : 'Tristan Haider', link: ""},
-                  {name : 'Zach	Hasson', link: "https://www.linkedin.com/in/zachary-hasson-347815125"}
+                  {name : "Ahrif McKee", link: "https://www.linkedin.com/in/ahrif-mckee-47a536129"},
+                  {name : "Robert Reiten", link: ""},
+                  {name : "Kanika Aggarwal", link: "https://www.linkedin.com/in/kanika-aggarwal-492304118"},
+                  {name : "Zachary Tully", link: ""},
+                  {name : "Brendan Greetham", link: "https://www.linkedin.com/in/brendan-greetham-796a9a111"},
+                  {name : "Matt Kim", link: ""},
+                  {name : "Tristan Haider", link: ""},
+                  {name : "Zach	Hasson", link: "https://www.linkedin.com/in/zachary-hasson-347815125"}
                 ]
             },
             {
-                name : 'Propulsion Team',
+                name : "Propulsion Team",
                 members : [
-                  {name : 'Riley Lyle', link: ""},
-                  {name : 'Lucas Campbell', link: "https://www.linkedin.com/in/lucas-campbell-a46210114"},
-                  {name : 'Echo	Wood', link: ""},
-                  {name : 'Piergiorgio Rojas', link: ""},
-                  {name : 'Stuart Dickson', link: ""},
-                  {name : 'Aashni Purohit', link: ""},
-                  {name : 'Nicole Tsang', link: "https://www.linkedin.com/in/nicole-tsang-6b7552129"},
-                  {name : 'John	Pham', link: ""},
-                  {name : 'Karl	Skeel', link: ""}
+                  {name : "Riley Lyle", link: ""},
+                  {name : "Lucas Campbell", link: "https://www.linkedin.com/in/lucas-campbell-a46210114"},
+                  {name : "Echo	Wood", link: ""},
+                  {name : "Piergiorgio Rojas", link: ""},
+                  {name : "Stuart Dickson", link: ""},
+                  {name : "Aashni Purohit", link: ""},
+                  {name : "Nicole Tsang", link: "https://www.linkedin.com/in/nicole-tsang-6b7552129"},
+                  {name : "John	Pham", link: ""},
+                  {name : "Karl	Skeel", link: ""}
                 ]
             },
             {
-                name : 'Dive Team',
+                name : "Dive Team",
                 members : [
-                  {name : 'Robert Karren', link: ""},
-                  {name : 'Joseph Zacharin', link: "https://www.linkedin.com/in/joseph-zacharin-715064126"},
-                  {name : 'Riley Harris', link: "https://www.linkedin.com/in/riley-harris-575297124"},
-                  {name : 'Dominic Roarbush', link: ""},
-                  {name : 'Carol Nishikawa', link: ""},
-                  {name : 'Cassie Riel', link: "https://www.linkedin.com/in/cassie-riel-995650a2"},
-                  {name : 'Colin Katagiri', link: "https://www.linkedin.com/in/colinkatagiri"},
-                  {name : 'Andrew Farrell', link: "https://www.linkedin.com/in/andrew-farrell-771a70100"},
-                  {name : 'Ryland Bryant', link: "https://www.linkedin.com/in/ryland-bryant-a7238519"}
+                  {name : "Robert Karren", link: ""},
+                  {name : "Joseph Zacharin", link: "https://www.linkedin.com/in/joseph-zacharin-715064126"},
+                  {name : "Riley Harris", link: "https://www.linkedin.com/in/riley-harris-575297124"},
+                  {name : "Dominic Roarbush", link: ""},
+                  {name : "Carol Nishikawa", link: ""},
+                  {name : "Cassie Riel", link: "https://www.linkedin.com/in/cassie-riel-995650a2"},
+                  {name : "Colin Katagiri", link: "https://www.linkedin.com/in/colinkatagiri"},
+                  {name : "Andrew Farrell", link: "https://www.linkedin.com/in/andrew-farrell-771a70100"},
+                  {name : "Ryland Bryant", link: "https://www.linkedin.com/in/ryland-bryant-a7238519"}
                 ]
             }
         ];
         $scope.title = "The Team";
         $scope.display = $scope.roster;
-        $scope.is_showing_members = false;
+        $scope.isShowingMembers = false;
         $scope.current_section = -1;
 
         $scope.reset = function() {
@@ -121,17 +121,17 @@
             }
             $scope.display = temp;
             $scope.title = "The Team";
-            $scope.is_showing_members = false;
+            $scope.isShowingMembers = false;
             $scope.current_section = -1;
         };
 
         $scope.reset();
 
         $scope.showSubteam = function(index, member){
-            if($scope.is_showing_members == false) {
+            if($scope.isShowingMembers == false) {
                 $scope.showTheseDetails(index);
             } else {
-                $window.location.href = member.link;
+                window.open(member.link);
             }
         };
         $scope.showThisSubteam = function(index) {
@@ -142,7 +142,7 @@
             }
             $scope.title = $scope.roster[index].name;
             $scope.display = temp;
-            $scope.is_showing_members = true;
+            $scope.isShowingMembers = true;
         }
 
 
@@ -235,7 +235,7 @@
             {src : "img/portfolio/portfolio-13.jpg"},
             {src : "img/portfolio/portfolio-14.jpg"}
         ];
-        $scope.initialPortfolioSize = 8;
+        $scope.initialPortfolioSize = 6;
         $scope.portfolio = new Array();
         $scope.initializePortfolio = function() {
             $scope.portfolio = [];
@@ -255,61 +255,112 @@
             $scope.isShowingMore = false;
             $scope.initializePortfolio();
         }
-        // SPONSOR INFORMATION
 
+        // SPONSOR INFORMATION
 
         $scope.sponsorName = "";
 
-        $scope.sponsor_count = 16;
+        $scope.searchSponsors = "";
 
-        $scope.search_sponsors = "";
+        $scope.sponsorLogosDir = "img/hps-sponsors/blue-white-transparent/";
+        $scope.sponsorLogosHoverDir = "img/hps-sponsors/original-transparent/";
 
-        $scope.sponsor_array_1 = ["img/hps-sponsors/sponsor1.png",
-                                "img/hps-sponsors/sponsor2.png",
-                                "img/hps-sponsors/sponsor3.png",
-
-                                "img/hps-sponsors/sponsor5.png",
-                                "img/hps-sponsors/sponsor6.png",
-                                "img/hps-sponsors/sponsor7.png",
-                                "img/hps-sponsors/sponsor8.png",
-                                "img/hps-sponsors/sponsor9.png",
-                            ];
-
-        $scope.importantSponsors = [
+        $scope.sponsorArr = [
             {
-                img : "img/hps-sponsors/fluke.png",
-                link : "http://www.fluke.com"
+                name : "Fluke Corporation",
+                imgSrc: "fluke.png",
+                link : "http://www.fluke.com/"
             },
             {
-                img : "img/hps-sponsors/dive.png",
-                link : "https://dive-xtras.com"
+                name : "Dive Xtras",
+                imgSrc: "dive.png",
+                link : "https://dive-xtras.com/"
             },
             {
-                img : "img/hps-sponsors/glosten.png",
-                link : "http://glosten.com"
+                name : "Glosten, Inc.",
+                imgSrc: "glosten.png",
+                link : "http://glosten.com/"
             },
             {
-                img : "img/hps-sponsors/sname.png",
-                link : "http://www.sname.org/home"},
+                name : "The Society of Naval Architects and Marine Engineers",
+                imgSrc: "sname.png",
+                link : "http://www.sname.org/home"
+            },
             {
-                img : "img/hps-sponsors/umbra.png",
+                name : "Umbra Group",
+                imgSrc: "umbra.png",
                 link : "https://www.umbragroup.com/en/"
+            },
+            {
+                name : "AkzoNobel N.V.",
+                imgSrc: "akzonobel.png",
+                link : "https://www.akzonobel.com/"
+            },
+            {
+                name : "Breedt Production Tooling and Design",
+                imgSrc: "bptd.png",
+                link : "http://www.bptdesign.com/"
+            },
+            {
+                name : "Claroworks Product Development",
+                imgSrc: "claroworks.png",
+                link : "http://www.claroworks.com/"
+            },
+            {
+                name : "Click Bond, Inc.",
+                imgSrc: "clickbond.png",
+                link : "http://clickbond.com/"
+            },
+            {
+                name : "Color Craft Inc.",
+                imgSrc: "colorcraft.png",
+                link : "http://colorcraftinc.com/"
+            },
+            {
+                name : "Electroimpact Inc.",
+                imgSrc: "electroimpact.png",
+                link : "https://www.electroimpact.com/"
+            },
+            {
+                name : "Fiberlay Inc",
+                imgSrc: "fiberlay.png",
+                link : "http://www.fiberlay.com/"
+            },
+            {
+                name : "Hexcel Corporation",
+                imgSrc: "hexcel.png",
+                link : "http://www.hexcel.com/"
+            },
+            {
+                name : "Janicki Industries, Inc.",
+                imgSrc: "janicki.png",
+                link : "https://www.janicki.com/"
+            },
+            {
+                name : "Lighthouse Diving Center, Inc.",
+                imgSrc: "lighthouse.png",
+                link : "http://www.lighthousediving.com/"
+            },
+            {
+                name : "Northwest School of Wooden BoatBuilding",
+                imgSrc: "nwswbb.png",
+                link : "http://www.nwswb.edu/"
+            },
+            {
+                name : "Pacific Research Laboratories, Inc.",
+                imgSrc: "prl.png",
+                link : "http://www.pacific-research.com/"
+            },
+            {
+                name : "Tap Plastics Inc.",
+                imgSrc: "tap.png",
+                link : "http://www.tapplastics.com/"
             }
         ];
+
         $scope.goTo = function(link) {
             $window.location.href = link;
-    };
-
-        // $scope.sponsor_array_2 =  ["img/hps-sponsors/sponsor11.png",
-        //                           "img/hps-sponsors/sponsor12.png",
-        //                           "img/hps-sponsors/sponsor13.png",
-        //                           "img/hps-sponsors/sponsor14.png",
-        //                           "img/hps-sponsors/sponsor15.png",
-        //                           "img/hps-sponsors/sponsor16.png"
-        //                       ];
-        //                                 "img/hps-sponsors/sponsor4.png",
-        //        "img/hps-sponsors/sponsor10.png"
-
+        };
 
     }
 })()
