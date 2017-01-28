@@ -59,6 +59,7 @@
                   {name : "Varun Viswanath", link: "https://www.linkedin.com/in/varun-viswanath-aab70345"},
                   {name : "Jack Mask", link: "https://www.linkedin.com/in/jmask"},
                   {name : "Brian Liu", link: "https://www.linkedin.com/in/brian-liu"},
+                  {name : "Lisa Auchynnikava", link: ""},
                   {name : "Michael Essaf", link: ""},
                   {name : "Jocelyn Ma", link: ""},
                   {name : "Gabrielle Pang", link: ""},
@@ -262,8 +263,9 @@
 
         $scope.searchspnsrs = "";
 
-        $scope.spnsrLogosDir = "img/hps-spnsrs/blue-white-transparent/";
+        $scope.spnsrLogosNormDir = "img/hps-spnsrs/blue-white-transparent/";
         $scope.spnsrLogosHoverDir = "img/hps-spnsrs/original-transparent/";
+        $scope.spnsrLogosDir = $scope.spnsrLogosNormDir;
 
         $scope.spnsrArr = [
             {
