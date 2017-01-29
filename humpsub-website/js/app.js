@@ -1,8 +1,8 @@
-(function() {
+(function () {
     "use strict";
 
     angular.module("app1", [])
-    .controller("appController", appController);
+        .controller("appController", appController);
 
     appController.$inject = ["$scope", "$window"];
     function appController($scope, $window) {
@@ -265,7 +265,6 @@
 
         $scope.spnsrLogosNormDir = "img/hps-spnsrs/blue-white-transparent/";
         $scope.spnsrLogosHoverDir = "img/hps-spnsrs/original-transparent/";
-        $scope.spnsrLogosDir = $scope.spnsrLogosNormDir;
 
         $scope.spnsrArr = [
             {
