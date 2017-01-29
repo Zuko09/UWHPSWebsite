@@ -358,6 +358,13 @@
                 link : "http://www.tapplastics.com/"
             }
         ];
+        
+        $scope.hover = function(element, uri) {
+            element.setAttribute('src', uri);
+        }
+        $scope.unhover = function(element, uri) {
+            element.setAttribute('src', uri);
+        }
 
         $scope.goTo = function(link) {
             $window.location.href = link;

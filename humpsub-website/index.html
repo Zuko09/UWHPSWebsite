@@ -243,10 +243,14 @@
         <h2 class="display-3 standout-text-light"> Huge Shoutout To Our Sponsors!</h2>
         <h3 class="display-4 standout-text-light">We Couldn't Do It Without Your Support!</h3>
         <div id="special" class="row">
-            <div ng-repeat="spnsr in spnsrArr track by $index" class="spnsr-logo">
+            <div ng-repeat="spnsr in spnsrArr" class="spnsr-logo"
+                 ng-init="imgSrc = spnsrLogosNormDir + spnsr.imgSrc;"
+                 ng-mouseover="imgSrc = spnsrLogosHoverDir + spnsr.imgSrc"
+                 ng-mouseout="imgSrc = spnsrLogosNormDir + spnsr.imgSrc">
                 <a href="{{spnsr.link}}">
-                    <img src="{{spnsrLogosDir}}{{spnsr.imgSrc}}" alt="{{spnsr.name}}">
-                    <div class="">{{spnsr.name}}</div>
+                    <div class="spnsr-img-wrapper">
+                        <img src="{{imgSrc}}" alt="{{spnsr.name}} Logo" title="{{spnsr.name}}">
+                    </div>
                 </a>
             </div>
         </div>
