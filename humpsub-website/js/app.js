@@ -75,8 +75,8 @@
                     {name : "Gabrielle Pang", link: ""},
                     // {name : "Timmy Lee", link: ""},
                     {name : "Tremaine Ng", link: "https://www.linkedin.com/in/trenng"},
-                    {name : "Daniel Tran", link: "https://www.linkedin.com/in/daniel-tran-3716a4b9"}
-                    {name : "Haytham Shaban", link: "https://www.linkedin.com/in/haythamshaban"},
+                    {name : "Daniel Tran", link: "https://www.linkedin.com/in/daniel-tran-3716a4b9"},
+                    {name : "Haytham Shaban", link: "https://www.linkedin.com/in/haythamshaban"}
                 ]
             },
             {
@@ -90,7 +90,9 @@
                     {name : "Brendan Greetham", link: "https://www.linkedin.com/in/brendan-greetham-796a9a111"},
                     // {name : "Matt Kim", link: ""},
                     {name : "Tristan Haider", link: ""},
-                    {name : "Zach Hasson", link: "https://www.linkedin.com/in/zachary-hasson-347815125"}
+                    {name : "Zach Hasson", link: "https://www.linkedin.com/in/zachary-hasson-347815125"},
+                    {name : "Lucas See", link: ""},
+                    {name : "Eli Miller", link: ""}
                 ]
             },
             {
