@@ -16,6 +16,7 @@
             //     name : "Team Leads",
             //     members : [
             //       {name : "Connor Hughes", link: "www.linkedin.com/in/connor-hughes-43495b110"},
+            //       {name : "Sharon Luo", link: "https://www.linkedin.com/in/sharon-luo"},
             //       {name : "Riley Harris", link: "https://www.linkedin.com/in/riley-harris-575297124"},
             //       {name : "Andrew Farrell", link: "https://www.linkedin.com/in/andrew-farrell-771a70100"},
             //       {name : "Jack Gentsch", link: "https://www.linkedin.com/in/jack-gentsch"},
@@ -27,45 +28,55 @@
             //     ]
             // },
             {
-                name : "Hull Team",
+                name : "Hull & Composites Teams",
                 members : [
                     {name : "Riley Harris", link: "https://www.linkedin.com/in/riley-harris-575297124"},
                     {name : "Sharon Luo", link: "https://www.linkedin.com/in/sharon-luo"},
                     {name : "Robert Karren", link: ""},
-                    {name : "Kyleah Hess", link: "https://www.linkedin.com/in/kyleahhess"},
-                    {name : "Anna Schmitz", link: ""},
-                    {name : "Sean Lam", link: ""}
+                    {name : "Kevin Castro-Siguenza", link: ""},
+                    {name : "Rick Huang", link: ""},
+                    {name : "Shawni Van Vessem", link: ""},
+                    {name : "Austin Park", link: ""},
+                    {name : "Shannon Dickenson", link: ""},
+                    {name : "Cody Perrine", link: ""},
+                    {name : "Xiange Wang", link: ""},
+                    {name : "Ho Wun Ng", link: ""},
+                    // {name : "Kyleah Hess", link: "https://www.linkedin.com/in/kyleahhess"},
+                    // {name : "Anna Schmitz", link: ""},
+                    // {name : "Sean Lam", link: ""}
                 ]
             },
             {
                 name : "Controls Team",
                 members : [
                     {name : "Andrew Farrell", link: "https://www.linkedin.com/in/andrew-farrell-771a70100"},
-                    {name : "Harpreet	Singh", link: ""},
-                    {name : "Nana	Yamagata", link: ""},
-                    {name : "Thuy	Nguyen", link: ""},
+                    {name : "Harpreet Singh", link: ""},
+                    {name : "Nana Yamagata", link: ""},
+                    {name : "Thuy Nguyen", link: ""},
                     {name : "Nikolas Johnson", link: ""},
                     {name : "Katherine Chun", link: "https://www.linkedin.com/in/chunkatherine"},
                     {name : "Joseph Zacharin", link: "https://www.linkedin.com/in/joseph-zacharin-715064126"},
                     {name : "Cassie Riel", link: "https://www.linkedin.com/in/cassie-riel-995650a2"},
-                    {name : "Ashley Huynh", link: ""}
+                    {name : "Jake Rosumny", link: ""},
+                    // {name : "Ashley Huynh", link: ""}
                 ]
             },
             {
                 name : "Electronics Team",
                 members : [
                     {name : "Jack Gentsch", link: "https://www.linkedin.com/in/jack-gentsch"},
-                    {name : "Joe Jimenez", link: ""},
-                    {name : "Varun Viswanath", link: "https://www.linkedin.com/in/varun-viswanath-aab70345"},
-                    {name : "Jack Mask", link: "https://www.linkedin.com/in/jmask"},
+                    // {name : "Joe Jimenez", link: ""},
+                    // {name : "Varun Viswanath", link: "https://www.linkedin.com/in/varun-viswanath-aab70345"},
+                    // {name : "Jack Mask", link: "https://www.linkedin.com/in/jmask"},
                     {name : "Brian Liu", link: "https://www.linkedin.com/in/brian-liu"},
-                    {name : "Lisa Auchynnikava", link: ""},
-                    {name : "Michael Essaf", link: ""},
-                    {name : "Jocelyn Ma", link: ""},
+                    // {name : "Lisa Auchynnikava", link: ""},
+                    // {name : "Michael Essaf", link: ""},
+                    // {name : "Jocelyn Ma", link: ""},
                     {name : "Gabrielle Pang", link: ""},
-                    {name : "Timmy Lee", link: ""},
-                    {name : "Tremaine	Ng", link: "https://www.linkedin.com/in/trenng"},
+                    // {name : "Timmy Lee", link: ""},
+                    {name : "Tremaine Ng", link: "https://www.linkedin.com/in/trenng"},
                     {name : "Daniel Tran", link: "https://www.linkedin.com/in/daniel-tran-3716a4b9"}
+                    {name : "Haytham Shaban", link: "https://www.linkedin.com/in/haythamshaban"},
                 ]
             },
             {
@@ -73,12 +84,13 @@
                 members : [
                     {name : "Ahrif McKee", link: "https://www.linkedin.com/in/ahrif-mckee-47a536129"},
                     {name : "Robert Reiten", link: ""},
-                    {name : "Kanika Aggarwal", link: "https://www.linkedin.com/in/kanika-aggarwal-492304118"},
+                    {name : "Jesse Castleberry", link: ""},
+                    // {name : "Kanika Aggarwal", link: "https://www.linkedin.com/in/kanika-aggarwal-492304118"},
                     {name : "Zachary Tully", link: ""},
                     {name : "Brendan Greetham", link: "https://www.linkedin.com/in/brendan-greetham-796a9a111"},
-                    {name : "Matt Kim", link: ""},
+                    // {name : "Matt Kim", link: ""},
                     {name : "Tristan Haider", link: ""},
-                    {name : "Zach	Hasson", link: "https://www.linkedin.com/in/zachary-hasson-347815125"}
+                    {name : "Zach Hasson", link: "https://www.linkedin.com/in/zachary-hasson-347815125"}
                 ]
             },
             {
@@ -86,13 +98,14 @@
                 members : [
                     {name : "Riley Lyle", link: ""},
                     {name : "Lucas Campbell", link: "https://www.linkedin.com/in/lucas-campbell-a46210114"},
-                    {name : "Echo	Wood", link: ""},
+                    {name : "Echo Wood", link: ""},
                     {name : "Piergiorgio Rojas", link: ""},
                     {name : "Stuart Dickson", link: ""},
-                    {name : "Aashni Purohit", link: ""},
+                    // {name : "Aashni Purohit", link: ""},
                     {name : "Nicole Tsang", link: "https://www.linkedin.com/in/nicole-tsang-6b7552129"},
-                    {name : "John	Pham", link: ""},
-                    {name : "Karl	Skeel", link: ""}
+                    {name : "John Pham", link: ""},
+                    {name : "Karl Skeel", link: ""},
+                    {name : "Emmanuel Pacheco", link: ""}
                 ]
             },
             {
@@ -101,12 +114,12 @@
                     {name : "Robert Karren", link: ""},
                     {name : "Joseph Zacharin", link: "https://www.linkedin.com/in/joseph-zacharin-715064126"},
                     {name : "Riley Harris", link: "https://www.linkedin.com/in/riley-harris-575297124"},
-                    {name : "Dominic Roarbush", link: ""},
+                    {name : "Dominic Forbush", link: ""},
                     {name : "Carol Nishikawa", link: ""},
                     {name : "Cassie Riel", link: "https://www.linkedin.com/in/cassie-riel-995650a2"},
                     {name : "Colin Katagiri", link: "https://www.linkedin.com/in/colinkatagiri"},
                     {name : "Andrew Farrell", link: "https://www.linkedin.com/in/andrew-farrell-771a70100"},
-                    {name : "Ryland Bryant", link: "https://www.linkedin.com/in/ryland-bryant-a7238519"}
+                    // {name : "Ryland Bryant", link: "https://www.linkedin.com/in/ryland-bryant-a7238519"}
                 ]
             }
         ];
@@ -154,7 +167,7 @@
         $scope.glyph = "fa fa-ship fa-stack-1x text-primary";
         $scope.teamInfo = [
             {
-                name : "The Hull Team",
+                name : "The Hull & Composites Teams",
                 description : "It all starts with hydrodynamics. An innovative team optimizes the sub’s hull for unmatched performance.",
                 glyph : "fa fa-ship fa-stack-1x text-primary",
                 details : "",
